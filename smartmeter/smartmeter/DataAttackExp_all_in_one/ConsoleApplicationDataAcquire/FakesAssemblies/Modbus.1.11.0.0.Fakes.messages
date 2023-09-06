@@ -1,0 +1,92 @@
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Data.DataStoreFactory 生成存根: 类型已密封。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Data.ModbusDataType 生成存根: 类型是一个值类型。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Data.DataStoreEventArgs 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusDevice 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusMaster 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusIpMaster 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusMasterTcpConnection 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusSerialMaster 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusSlave 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusSerialSlave 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusSlaveRequestEventArgs 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusTcpSlave 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusUdpSlave 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.TcpConnectionEventArgs 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.CrossPlatformUdpClient 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.CompactUdpClient 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.FullUdpClient 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.StreamResourceUtility 生成存根: 类型已密封。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.ModbusTransport 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.ModbusSerialTransport 生成存根: 类型没有系列可见的构造函数。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.ModbusAsciiTransport 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.ModbusIpTransport 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.ModbusRtuTransport 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.EmptyTransport 生成存根: method System.Byte[] Modbus.IO.ModbusTransport.BuildMessageFrame(Modbus.Message.IModbusMessage message) unstubbable: 方法是抽象的，因此无法用作存根，方法签名类型对于 exported or assembly(Modbus.1.11.0.0.Fakes) or subtype(EmptyTransport in assembly Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.SerialPortAdapter 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.TcpClientAdapter 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.UdpClientAdapter 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ModbusMessage 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ReadCoilsInputsRequest 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ReadHoldingInputRegistersRequest 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ReadWriteMultipleRegistersRequest 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ModbusMessageWithData`1 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.DiagnosticsRequestResponse 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.SlaveExceptionResponse 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ModbusMessageFactory 生成存根: 类型已密封。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ModbusMessageImpl 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ReadCoilsInputsResponse 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ReadHoldingInputRegistersResponse 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteMultipleCoilsRequest 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteMultipleCoilsResponse 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteMultipleRegistersRequest 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteMultipleRegistersResponse 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteSingleCoilRequestResponse 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteSingleRegisterRequestResponse 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Modbus 生成存根: 类型已密封。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Resources 生成存根: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Utility.DiscriminatedUnionOption 生成存根: 类型是一个值类型。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Utility.ModbusUtility 生成存根: 类型已密封。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 <PrivateImplementationDetails>{9A759EED-51CE-4B50-834F-8258DBF1C7CA} 生成存根: 类型不受支持，因为存在内部限制。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Data.DataStore+<>c__DisplayClass5`1 生成填充码: 类型不受支持，因为存在内部限制。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Data.DataStoreFactory+<>c__DisplayClass4 生成填充码: 类型不受支持，因为存在内部限制。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Data.IModbusMessageDataCollection 生成填充码: 类型是一个接口。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Data.ModbusDataType 生成填充码: 类型是一个枚举。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.IModbusMaster 生成填充码: 类型是一个接口。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.IModbusSerialMaster 生成填充码: 类型是一个接口。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.ModbusMasterTcpConnection 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Device.TcpConnectionEventArgs 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.CrossPlatformUdpClient 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.CompactUdpClient 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.FullUdpClient 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.StreamResourceUtility 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.IStreamResource 生成填充码: 类型是一个接口。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.ModbusTransport+<>c__DisplayClass1 生成填充码: 类型不受支持，因为存在内部限制。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.ModbusAsciiTransport 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.ModbusIpTransport 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.ModbusRtuTransport 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.SerialPortAdapter 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.TcpClientAdapter 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.IO.UdpClientAdapter 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.IModbusMessage 生成填充码: 类型是一个接口。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.IModbusRequest 生成填充码: 类型是一个接口。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ModbusMessage 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ReadCoilsInputsRequest 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ReadHoldingInputRegistersRequest 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ReadWriteMultipleRegistersRequest 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ModbusMessageWithData`1 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.DiagnosticsRequestResponse 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.SlaveExceptionResponse 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ModbusMessageFactory 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ModbusMessageImpl 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ReadCoilsInputsResponse 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.ReadHoldingInputRegistersResponse 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteMultipleCoilsRequest 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteMultipleCoilsResponse 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteMultipleRegistersRequest 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteMultipleRegistersResponse 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteSingleCoilRequestResponse 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Message.WriteSingleRegisterRequestResponse 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Modbus 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Resources 生成填充码: 类型对 exported or assembly(Modbus.1.11.0.0.Fakes) 不可见。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 Modbus.Utility.DiscriminatedUnionOption 生成填充码: 类型是一个枚举。
+D:\DataAttackExpGE6000new\ConsoleApplicationDataAcquire\Fakes\Modbus.fakes : warning : 无法为 <PrivateImplementationDetails>{9A759EED-51CE-4B50-834F-8258DBF1C7CA} 生成填充码: 类型不受支持，因为存在内部限制。
