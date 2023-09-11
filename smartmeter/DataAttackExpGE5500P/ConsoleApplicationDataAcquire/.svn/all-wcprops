@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CPS_System/!svn/ver/5/trunk/DataAcquireExp/ConsoleApplicationDataAcquire
+END
+TCPAmmeterData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CPS_System/!svn/ver/5/trunk/DataAcquireExp/ConsoleApplicationDataAcquire/TCPAmmeterData.cs
+END
+CSmartMeterDataInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CPS_System/!svn/ver/5/trunk/DataAcquireExp/ConsoleApplicationDataAcquire/CSmartMeterDataInfo.cs
+END
+CSmartMeterData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CPS_System/!svn/ver/5/trunk/DataAcquireExp/ConsoleApplicationDataAcquire/CSmartMeterData.cs
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CPS_System/!svn/ver/5/trunk/DataAcquireExp/ConsoleApplicationDataAcquire/app.config
+END
+TCPSGInterface.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CPS_System/!svn/ver/5/trunk/DataAcquireExp/ConsoleApplicationDataAcquire/TCPSGInterface.cs
+END
+CTConver.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CPS_System/!svn/ver/5/trunk/DataAcquireExp/ConsoleApplicationDataAcquire/CTConver.cs
+END
+ConsoleApplicationDataAcquire.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/CPS_System/!svn/ver/5/trunk/DataAcquireExp/ConsoleApplicationDataAcquire/ConsoleApplicationDataAcquire.csproj
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CPS_System/!svn/ver/5/trunk/DataAcquireExp/ConsoleApplicationDataAcquire/Program.cs
+END

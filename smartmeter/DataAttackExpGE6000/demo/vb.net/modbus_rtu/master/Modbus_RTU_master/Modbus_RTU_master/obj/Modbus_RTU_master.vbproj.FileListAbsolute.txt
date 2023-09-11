@@ -1,0 +1,65 @@
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\Modbus_RTU_master.exe
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\Modbus_RTU_master.pdb
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\Modbus_RTU_master.xml
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\log4net.dll
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.Form1.resources
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.Resources.resources
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.vbproj.GenerateResource.Cache
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.exe
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.xml
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.pdb
+C:\Documents and Settings\doctor\桌面\RTU\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.frmInputValue.resources
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.exe
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.xml
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.pdb
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\Modbus_RTU_master.exe
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\Modbus_RTU_master.pdb
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\Modbus_RTU_master.xml
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\log4net.dll
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.Form1.resources
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.frmInputValue.resources
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.Resources.resources
+C:\Documents and Settings\doctor\桌面\nModbus demo\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.vbproj.GenerateResource.Cache
+Z:\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.exe
+Z:\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.xml
+Z:\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.pdb
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.exe
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.xml
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.pdb
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\Modbus_RTU_master.exe
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\Modbus_RTU_master.pdb
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Debug\Modbus_RTU_master.xml
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\ResolveAssemblyReference.cache
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.Form1.resources
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.frmInputValue.resources
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.Resources.resources
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Debug\Modbus_RTU_master.vbproj.GenerateResource.Cache
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\ResolveAssemblyReference.cache
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.Form1.resources
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.frmInputValue.resources
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.Resources.resources
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.vbproj.GenerateResource.Cache
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Release\Modbus_RTU_master.exe
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Release\Modbus_RTU_master.pdb
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Release\Modbus_RTU_master.xml
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Release\log4net.dll
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Release\nmodbuspc.dll
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.exe
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.xml
+D:\Renee_Share\20130718 nModbus\-nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.pdb
+Z:\20130718 nModbus[i-8000]\nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.exe
+Z:\20130718 nModbus[i-8000]\nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.xml
+Z:\20130718 nModbus[i-8000]\nModbus Master[Form]\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.pdb
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.exe
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.xml
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.pdb
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Release\Modbus_RTU_master.exe
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Release\Modbus_RTU_master.pdb
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\bin\Release\Modbus_RTU_master.xml
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\ResolveAssemblyReference.cache
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.Form1.resources
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.frmInputValue.resources
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.Resources.resources
+Z:\20130718 nModbus[winForm]\nModbus Master_1015\vb.net\Modbus_RTU_master\Modbus_RTU_master\obj\Release\Modbus_RTU_master.vbproj.GenerateResource.Cache

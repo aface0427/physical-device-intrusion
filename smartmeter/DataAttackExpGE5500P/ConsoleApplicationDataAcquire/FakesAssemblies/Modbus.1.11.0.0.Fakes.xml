@@ -1,0 +1,2069 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Modbus.1.11.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Modbus.Data.Fakes.ShimDataStore">
+            <summary>Modbus.Data.DataStore 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStore.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStore.#ctor(Modbus.Data.DataStore)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStore.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStore.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStore.ReadDataOf2DataStoreModbusDataCollectionOfM1UInt16UInt16Object``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Modbus.Data.DataStore,Modbus.Data.ModbusDataCollection{``1},System.UInt16,System.UInt16,System.Object,``0})">
+            <summary>设置 DataStore.ReadData(DataStore dataStore, ModbusDataCollection`1&lt;!!1&gt; dataSource, UInt16 startAddress, UInt16 count, Object syncRoot) 的 填充码</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStore.UpdateOf1IEnumerableOfM0IListOfM0Int32``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IList{``0},System.Int32})">
+            <summary>设置 DataStore.Update(IEnumerable`1&lt;!!0&gt; items, IList`1&lt;!!0&gt; destination, Int32 startIndex) 的 填充码</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStore.WriteDataOf1DataStoreIEnumerableOfM0ModbusDataCollectionOfM0UInt16Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Modbus.Data.DataStore,System.Collections.Generic.IEnumerable{``0},Modbus.Data.ModbusDataCollection{``0},System.UInt16,System.Object})">
+            <summary>设置 DataStore.WriteData(DataStore dataStore, IEnumerable`1&lt;!!0&gt; items, ModbusDataCollection`1&lt;!!0&gt; destination, UInt16 startAddress, Object syncRoot) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.CoilDiscretesGet">
+            <summary>设置 DataStore.get_CoilDiscretes() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.CoilDiscretesSetModbusDataCollectionOfBoolean">
+            <summary>设置 DataStore.set_CoilDiscretes(ModbusDataCollection`1&lt;Boolean&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.Constructor">
+            <summary>设置 DataStore.DataStore() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.DataStoreReadFromAddEventHandlerOfDataStoreEventArgs">
+            <summary>设置 DataStore.add_DataStoreReadFrom(EventHandler`1&lt;DataStoreEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.DataStoreReadFromRemoveEventHandlerOfDataStoreEventArgs">
+            <summary>设置 DataStore.remove_DataStoreReadFrom(EventHandler`1&lt;DataStoreEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.DataStoreWrittenToAddEventHandlerOfDataStoreEventArgs">
+            <summary>设置 DataStore.add_DataStoreWrittenTo(EventHandler`1&lt;DataStoreEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.DataStoreWrittenToRemoveEventHandlerOfDataStoreEventArgs">
+            <summary>设置 DataStore.remove_DataStoreWrittenTo(EventHandler`1&lt;DataStoreEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.HoldingRegistersGet">
+            <summary>设置 DataStore.get_HoldingRegisters() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.HoldingRegistersSetModbusDataCollectionOfUInt16">
+            <summary>设置 DataStore.set_HoldingRegisters(ModbusDataCollection`1&lt;UInt16&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.InputDiscretesGet">
+            <summary>设置 DataStore.get_InputDiscretes() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.InputDiscretesSetModbusDataCollectionOfBoolean">
+            <summary>设置 DataStore.set_InputDiscretes(ModbusDataCollection`1&lt;Boolean&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.InputRegistersGet">
+            <summary>设置 DataStore.get_InputRegisters() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.InputRegistersSetModbusDataCollectionOfUInt16">
+            <summary>设置 DataStore.set_InputRegisters(ModbusDataCollection`1&lt;UInt16&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.SyncRootGet">
+            <summary>设置 DataStore.get_SyncRoot() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.ShimDataStore.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.CoilDiscretesGet">
+            <summary>设置 DataStore.get_CoilDiscretes() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.CoilDiscretesSetModbusDataCollectionOfBoolean">
+            <summary>设置 DataStore.set_CoilDiscretes(ModbusDataCollection`1&lt;Boolean&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.DataStoreReadFromAddEventHandlerOfDataStoreEventArgs">
+            <summary>设置 DataStore.add_DataStoreReadFrom(EventHandler`1&lt;DataStoreEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.DataStoreReadFromRemoveEventHandlerOfDataStoreEventArgs">
+            <summary>设置 DataStore.remove_DataStoreReadFrom(EventHandler`1&lt;DataStoreEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.DataStoreWrittenToAddEventHandlerOfDataStoreEventArgs">
+            <summary>设置 DataStore.add_DataStoreWrittenTo(EventHandler`1&lt;DataStoreEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.DataStoreWrittenToRemoveEventHandlerOfDataStoreEventArgs">
+            <summary>设置 DataStore.remove_DataStoreWrittenTo(EventHandler`1&lt;DataStoreEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.HoldingRegistersGet">
+            <summary>设置 DataStore.get_HoldingRegisters() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.HoldingRegistersSetModbusDataCollectionOfUInt16">
+            <summary>设置 DataStore.set_HoldingRegisters(ModbusDataCollection`1&lt;UInt16&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.InputDiscretesGet">
+            <summary>设置 DataStore.get_InputDiscretes() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.InputDiscretesSetModbusDataCollectionOfBoolean">
+            <summary>设置 DataStore.set_InputDiscretes(ModbusDataCollection`1&lt;Boolean&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.InputRegistersGet">
+            <summary>设置 DataStore.get_InputRegisters() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.InputRegistersSetModbusDataCollectionOfUInt16">
+            <summary>设置 DataStore.set_InputRegisters(ModbusDataCollection`1&lt;UInt16&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStore.AllInstances.SyncRootGet">
+            <summary>设置 DataStore.get_SyncRoot() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.ShimDataStoreEventArgs">
+            <summary>Modbus.Data.DataStoreEventArgs 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStoreEventArgs.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStoreEventArgs.#ctor(Modbus.Data.DataStoreEventArgs)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStoreEventArgs.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStoreEventArgs.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStoreEventArgs.CreateDataStoreEventArgsOf1UInt16ModbusDataTypeIEnumerableOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.UInt16,Modbus.Data.ModbusDataType,System.Collections.Generic.IEnumerable{``0},Modbus.Data.DataStoreEventArgs})">
+            <summary>设置 DataStoreEventArgs.CreateDataStoreEventArgs(UInt16 startAddress, ModbusDataType modbusDataType, IEnumerable`1&lt;!!0&gt; data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.ConstructorUInt16ModbusDataType">
+            <summary>设置 DataStoreEventArgs.DataStoreEventArgs(UInt16 startAddress, ModbusDataType modbusDataType) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.DataGet">
+            <summary>设置 DataStoreEventArgs.get_Data() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.DataSetDiscriminatedUnionOfReadOnlyCollectionOfBooleanReadOnlyCollectionOfUInt16">
+            <summary>设置 DataStoreEventArgs.set_Data(DiscriminatedUnion`2&lt;ReadOnlyCollection`1&lt;Boolean&gt;,ReadOnlyCollection`1&lt;UInt16&gt;&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.ModbusDataTypeGet">
+            <summary>设置 DataStoreEventArgs.get_ModbusDataType() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.ModbusDataTypeSetModbusDataType">
+            <summary>设置 DataStoreEventArgs.set_ModbusDataType(ModbusDataType value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.StartAddressGet">
+            <summary>设置 DataStoreEventArgs.get_StartAddress() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.StartAddressSetUInt16">
+            <summary>设置 DataStoreEventArgs.set_StartAddress(UInt16 value) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.ShimDataStoreEventArgs.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.AllInstances.DataGet">
+            <summary>设置 DataStoreEventArgs.get_Data() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.AllInstances.DataSetDiscriminatedUnionOfReadOnlyCollectionOfBooleanReadOnlyCollectionOfUInt16">
+            <summary>设置 DataStoreEventArgs.set_Data(DiscriminatedUnion`2&lt;ReadOnlyCollection`1&lt;Boolean&gt;,ReadOnlyCollection`1&lt;UInt16&gt;&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.AllInstances.ModbusDataTypeGet">
+            <summary>设置 DataStoreEventArgs.get_ModbusDataType() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.AllInstances.ModbusDataTypeSetModbusDataType">
+            <summary>设置 DataStoreEventArgs.set_ModbusDataType(ModbusDataType value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.AllInstances.StartAddressGet">
+            <summary>设置 DataStoreEventArgs.get_StartAddress() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreEventArgs.AllInstances.StartAddressSetUInt16">
+            <summary>设置 DataStoreEventArgs.set_StartAddress(UInt16 value) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.ShimDataStoreFactory">
+            <summary>Modbus.Data.DataStoreFactory 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStoreFactory.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStoreFactory.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDataStoreFactory.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreFactory.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreFactory.CreateDefaultDataStore">
+            <summary>设置 DataStoreFactory.CreateDefaultDataStore() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreFactory.CreateDefaultDataStoreUInt16UInt16UInt16UInt16">
+            <summary>设置 DataStoreFactory.CreateDefaultDataStore(UInt16 coilsCount, UInt16 inputsCount, UInt16 holdingRegistersCount, UInt16 inputRegistersCount) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDataStoreFactory.CreateTestDataStore">
+            <summary>设置 DataStoreFactory.CreateTestDataStore() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.ShimDiscreteCollection">
+            <summary>Modbus.Data.DiscreteCollection 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.#ctor(Modbus.Data.DiscreteCollection)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.Bind(Modbus.Data.IModbusMessageDataCollection)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.Bind(System.Collections.ICollection)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.Bind(System.Collections.IEnumerable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.Bind(System.Collections.IList)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.Bind(System.Collections.Generic.ICollection{System.Boolean})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.Bind(System.Collections.Generic.IEnumerable{System.Boolean})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimDiscreteCollection.Bind(System.Collections.Generic.IList{System.Boolean})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.ByteCountGet">
+            <summary>设置 DiscreteCollection.get_ByteCount() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.Constructor">
+            <summary>设置 DiscreteCollection.DiscreteCollection() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.ConstructorBooleanArray">
+            <summary>设置 DiscreteCollection.DiscreteCollection(Boolean[] bits) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.ConstructorByteArray">
+            <summary>设置 DiscreteCollection.DiscreteCollection(Byte[] bytes) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.ConstructorIListOfBoolean">
+            <summary>设置 DiscreteCollection.DiscreteCollection(IList`1&lt;Boolean&gt; bits) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.NetworkBytesGet">
+            <summary>设置 DiscreteCollection.get_NetworkBytes() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.ToString">
+            <summary>设置 DiscreteCollection.ToString() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection._ToStringb__0Boolean">
+            <summary>设置 DiscreteCollection.&lt;ToString&gt;b__0(Boolean discrete) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.ShimDiscreteCollection.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.AllInstances.ByteCountGet">
+            <summary>设置 DiscreteCollection.get_ByteCount() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.AllInstances.NetworkBytesGet">
+            <summary>设置 DiscreteCollection.get_NetworkBytes() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimDiscreteCollection.AllInstances.ToString01">
+            <summary>设置 DiscreteCollection.ToString() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.ShimModbusDataCollection`1">
+            <summary>Modbus.Data.ModbusDataCollection`1 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimModbusDataCollection`1.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimModbusDataCollection`1.#ctor(Modbus.Data.ModbusDataCollection{`0})">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimModbusDataCollection`1.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimModbusDataCollection`1.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimModbusDataCollection`1.Bind(System.Collections.ICollection)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimModbusDataCollection`1.Bind(System.Collections.IEnumerable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimModbusDataCollection`1.Bind(System.Collections.IList)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimModbusDataCollection`1.Bind(System.Collections.Generic.ICollection{`0})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimModbusDataCollection`1.Bind(System.Collections.Generic.IEnumerable{`0})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimModbusDataCollection`1.Bind(System.Collections.Generic.IList{`0})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.AddDefaultIListOfT0">
+            <summary>设置 ModbusDataCollection`1.AddDefault(IList`1&lt;!0&gt; data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.ClearItems">
+            <summary>设置 ModbusDataCollection`1.ClearItems() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.Constructor">
+            <summary>设置 ModbusDataCollection`1.ModbusDataCollection`1() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.ConstructorIListOfT0">
+            <summary>设置 ModbusDataCollection`1.ModbusDataCollection`1(IList`1&lt;!0&gt; data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.ConstructorT0Array">
+            <summary>设置 ModbusDataCollection`1.ModbusDataCollection`1(!0[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.InsertItemInt32T0">
+            <summary>设置 ModbusDataCollection`1.InsertItem(Int32 index, !0 item) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.ModbusDataTypeGet">
+            <summary>设置 ModbusDataCollection`1.get_ModbusDataType() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.ModbusDataTypeSetModbusDataType">
+            <summary>设置 ModbusDataCollection`1.set_ModbusDataType(ModbusDataType value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.RemoveItemInt32">
+            <summary>设置 ModbusDataCollection`1.RemoveItem(Int32 index) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.SetItemInt32T0">
+            <summary>设置 ModbusDataCollection`1.SetItem(Int32 index, !0 item) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.ShimModbusDataCollection`1.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.AllInstances.ClearItems">
+            <summary>设置 ModbusDataCollection`1.ClearItems() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.AllInstances.InsertItemInt32T0">
+            <summary>设置 ModbusDataCollection`1.InsertItem(Int32 index, !0 item) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.AllInstances.ModbusDataTypeGet">
+            <summary>设置 ModbusDataCollection`1.get_ModbusDataType() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.AllInstances.ModbusDataTypeSetModbusDataType">
+            <summary>设置 ModbusDataCollection`1.set_ModbusDataType(ModbusDataType value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.AllInstances.RemoveItemInt32">
+            <summary>设置 ModbusDataCollection`1.RemoveItem(Int32 index) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimModbusDataCollection`1.AllInstances.SetItemInt32T0">
+            <summary>设置 ModbusDataCollection`1.SetItem(Int32 index, !0 item) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.ShimRegisterCollection">
+            <summary>Modbus.Data.RegisterCollection 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.#ctor(Modbus.Data.RegisterCollection)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.Bind(Modbus.Data.IModbusMessageDataCollection)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.Bind(System.Collections.ICollection)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.Bind(System.Collections.IEnumerable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.Bind(System.Collections.IList)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.Bind(System.Collections.Generic.ICollection{System.UInt16})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.Bind(System.Collections.Generic.IEnumerable{System.UInt16})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.ShimRegisterCollection.Bind(System.Collections.Generic.IList{System.UInt16})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.ByteCountGet">
+            <summary>设置 RegisterCollection.get_ByteCount() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.Constructor">
+            <summary>设置 RegisterCollection.RegisterCollection() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.ConstructorByteArray">
+            <summary>设置 RegisterCollection.RegisterCollection(Byte[] bytes) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.ConstructorIListOfUInt16">
+            <summary>设置 RegisterCollection.RegisterCollection(IList`1&lt;UInt16&gt; registers) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.ConstructorUInt16Array">
+            <summary>设置 RegisterCollection.RegisterCollection(UInt16[] registers) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.NetworkBytesGet">
+            <summary>设置 RegisterCollection.get_NetworkBytes() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.ToString">
+            <summary>设置 RegisterCollection.ToString() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection._ToStringb__0UInt16">
+            <summary>设置 RegisterCollection.&lt;ToString&gt;b__0(UInt16 v) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.ShimRegisterCollection.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.AllInstances.ByteCountGet">
+            <summary>设置 RegisterCollection.get_ByteCount() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.AllInstances.NetworkBytesGet">
+            <summary>设置 RegisterCollection.get_NetworkBytes() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.ShimRegisterCollection.AllInstances.ToString01">
+            <summary>设置 RegisterCollection.ToString() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.StubDataStore">
+            <summary>Modbus.Data.DataStore 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDataStore.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDataStore.InitializeStub">
+            <summary>初始化 type StubDataStore 的新实例</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubDataStore.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubDataStore.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubDataStore.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.StubDiscreteCollection">
+            <summary>Modbus.Data.DiscreteCollection 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDiscreteCollection.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDiscreteCollection.#ctor(System.Boolean[])">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDiscreteCollection.#ctor(System.Byte[])">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDiscreteCollection.#ctor(System.Collections.Generic.IList{System.Boolean})">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDiscreteCollection.ClearItems">
+            <summary>设置 Collection`1.ClearItems() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubDiscreteCollection.ClearItems01">
+            <summary>设置 Collection`1.ClearItems() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDiscreteCollection.InitializeStub">
+            <summary>初始化 type StubDiscreteCollection 的新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDiscreteCollection.InsertItem(System.Int32,System.Boolean)">
+            <summary>设置 Collection`1.InsertItem(Int32 index, !0 item) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubDiscreteCollection.InsertItemInt32Boolean">
+            <summary>设置 Collection`1.InsertItem(Int32 index, !0 item) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDiscreteCollection.RemoveItem(System.Int32)">
+            <summary>设置 Collection`1.RemoveItem(Int32 index) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubDiscreteCollection.RemoveItemInt32">
+            <summary>设置 Collection`1.RemoveItem(Int32 index) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDiscreteCollection.SetItem(System.Int32,System.Boolean)">
+            <summary>设置 Collection`1.SetItem(Int32 index, !0 item) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubDiscreteCollection.SetItemInt32Boolean">
+            <summary>设置 Collection`1.SetItem(Int32 index, !0 item) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubDiscreteCollection.ToString">
+            <summary>设置 DiscreteCollection.ToString() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubDiscreteCollection.ToString01">
+            <summary>设置 DiscreteCollection.ToString() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubDiscreteCollection.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubDiscreteCollection.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubDiscreteCollection.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.StubIModbusMessageDataCollection">
+            <summary>Modbus.Data.IModbusMessageDataCollection 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubIModbusMessageDataCollection.#ctor">
+            <summary>初始化 type StubIModbusMessageDataCollection 的新实例</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubIModbusMessageDataCollection.ByteCountGet">
+            <summary>设置 IModbusMessageDataCollection.get_ByteCount() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubIModbusMessageDataCollection.NetworkBytesGet">
+            <summary>设置 IModbusMessageDataCollection.get_NetworkBytes() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubIModbusMessageDataCollection.m::Modbus#Data#IModbusMessageDataCollection#ByteCount">
+            <summary>设置 IModbusMessageDataCollection.get_ByteCount() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubIModbusMessageDataCollection.m::Modbus#Data#IModbusMessageDataCollection#NetworkBytes">
+            <summary>设置 IModbusMessageDataCollection.get_NetworkBytes() 的 stub</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.StubModbusDataCollection`1">
+            <summary>Modbus.Data.ModbusDataCollection`1 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubModbusDataCollection`1.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubModbusDataCollection`1.#ctor(`0[])">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubModbusDataCollection`1.#ctor(System.Collections.Generic.IList{`0})">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubModbusDataCollection`1.ClearItems">
+            <summary>设置 ModbusDataCollection`1.ClearItems() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubModbusDataCollection`1.ClearItems01">
+            <summary>设置 ModbusDataCollection`1.ClearItems() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubModbusDataCollection`1.InitializeStub">
+            <summary>初始化 type StubModbusDataCollection 的新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubModbusDataCollection`1.InsertItem(System.Int32,`0)">
+            <summary>设置 ModbusDataCollection`1.InsertItem(Int32 index, !0 item) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubModbusDataCollection`1.InsertItemInt32T0">
+            <summary>设置 ModbusDataCollection`1.InsertItem(Int32 index, !0 item) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubModbusDataCollection`1.RemoveItem(System.Int32)">
+            <summary>设置 ModbusDataCollection`1.RemoveItem(Int32 index) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubModbusDataCollection`1.RemoveItemInt32">
+            <summary>设置 ModbusDataCollection`1.RemoveItem(Int32 index) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubModbusDataCollection`1.SetItem(System.Int32,`0)">
+            <summary>设置 ModbusDataCollection`1.SetItem(Int32 index, !0 item) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubModbusDataCollection`1.SetItemInt32T0">
+            <summary>设置 ModbusDataCollection`1.SetItem(Int32 index, !0 item) 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubModbusDataCollection`1.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubModbusDataCollection`1.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubModbusDataCollection`1.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:Modbus.Data.Fakes.StubRegisterCollection">
+            <summary>Modbus.Data.RegisterCollection 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubRegisterCollection.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubRegisterCollection.#ctor(System.Byte[])">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubRegisterCollection.#ctor(System.UInt16[])">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubRegisterCollection.#ctor(System.Collections.Generic.IList{System.UInt16})">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubRegisterCollection.ClearItems">
+            <summary>设置 Collection`1.ClearItems() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubRegisterCollection.ClearItems01">
+            <summary>设置 Collection`1.ClearItems() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubRegisterCollection.InitializeStub">
+            <summary>初始化 type StubRegisterCollection 的新实例</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubRegisterCollection.InsertItem(System.Int32,System.UInt16)">
+            <summary>设置 Collection`1.InsertItem(Int32 index, !0 item) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubRegisterCollection.InsertItemInt32UInt16">
+            <summary>设置 Collection`1.InsertItem(Int32 index, !0 item) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubRegisterCollection.RemoveItem(System.Int32)">
+            <summary>设置 Collection`1.RemoveItem(Int32 index) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubRegisterCollection.RemoveItemInt32">
+            <summary>设置 Collection`1.RemoveItem(Int32 index) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubRegisterCollection.SetItem(System.Int32,System.UInt16)">
+            <summary>设置 Collection`1.SetItem(Int32 index, !0 item) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubRegisterCollection.SetItemInt32UInt16">
+            <summary>设置 Collection`1.SetItem(Int32 index, !0 item) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Data.Fakes.StubRegisterCollection.ToString">
+            <summary>设置 RegisterCollection.ToString() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Data.Fakes.StubRegisterCollection.ToString01">
+            <summary>设置 RegisterCollection.ToString() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubRegisterCollection.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubRegisterCollection.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:Modbus.Data.Fakes.StubRegisterCollection.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusDevice">
+            <summary>Modbus.Device.ModbusDevice 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusDevice.#ctor(Modbus.Device.ModbusDevice)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusDevice.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusDevice.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusDevice.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusDevice.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusDevice.ConstructorModbusTransport">
+            <summary>设置 ModbusDevice.ModbusDevice(ModbusTransport transport) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusDevice.Dispose">
+            <summary>设置 ModbusDevice.Dispose() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusDevice.DisposeBoolean">
+            <summary>设置 ModbusDevice.Dispose(Boolean disposing) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusDevice.TransportGet">
+            <summary>设置 ModbusDevice.get_Transport() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusDevice.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusDevice.AllInstances.Dispose">
+            <summary>设置 ModbusDevice.Dispose() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusDevice.AllInstances.DisposeBoolean">
+            <summary>设置 ModbusDevice.Dispose(Boolean disposing) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusDevice.AllInstances.TransportGet">
+            <summary>设置 ModbusDevice.get_Transport() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusIpMaster">
+            <summary>Modbus.Device.ModbusIpMaster 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusIpMaster.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusIpMaster.#ctor(Modbus.Device.ModbusIpMaster)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusIpMaster.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusIpMaster.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusIpMaster.Bind(Modbus.Device.IModbusMaster)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusIpMaster.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.ConstructorModbusTransport">
+            <summary>设置 ModbusIpMaster.ModbusIpMaster(ModbusTransport transport) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.CreateIpIStreamResource">
+            <summary>设置 ModbusIpMaster.CreateIp(IStreamResource streamResource) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.CreateIpSerialPort">
+            <summary>设置 ModbusIpMaster.CreateIp(SerialPort serialPort) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.CreateIpTcpClient">
+            <summary>设置 ModbusIpMaster.CreateIp(TcpClient tcpClient) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.CreateIpUdpClient">
+            <summary>设置 ModbusIpMaster.CreateIp(UdpClient udpClient) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.ReadCoilsUInt16UInt16">
+            <summary>设置 ModbusIpMaster.ReadCoils(UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.ReadHoldingRegistersUInt16UInt16">
+            <summary>设置 ModbusIpMaster.ReadHoldingRegisters(UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.ReadInputRegistersUInt16UInt16">
+            <summary>设置 ModbusIpMaster.ReadInputRegisters(UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.ReadInputsUInt16UInt16">
+            <summary>设置 ModbusIpMaster.ReadInputs(UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.ReadWriteMultipleRegistersUInt16UInt16UInt16UInt16Array">
+            <summary>设置 ModbusIpMaster.ReadWriteMultipleRegisters(UInt16 startReadAddress, UInt16 numberOfPointsToRead, UInt16 startWriteAddress, UInt16[] writeData) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.WriteMultipleCoilsUInt16BooleanArray">
+            <summary>设置 ModbusIpMaster.WriteMultipleCoils(UInt16 startAddress, Boolean[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.WriteMultipleRegistersUInt16UInt16Array">
+            <summary>设置 ModbusIpMaster.WriteMultipleRegisters(UInt16 startAddress, UInt16[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.WriteSingleCoilUInt16Boolean">
+            <summary>设置 ModbusIpMaster.WriteSingleCoil(UInt16 coilAddress, Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.WriteSingleRegisterUInt16UInt16">
+            <summary>设置 ModbusIpMaster.WriteSingleRegister(UInt16 registerAddress, UInt16 value) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusIpMaster.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.AllInstances.ReadCoilsUInt16UInt16">
+            <summary>设置 ModbusIpMaster.ReadCoils(UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.AllInstances.ReadHoldingRegistersUInt16UInt16">
+            <summary>设置 ModbusIpMaster.ReadHoldingRegisters(UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.AllInstances.ReadInputRegistersUInt16UInt16">
+            <summary>设置 ModbusIpMaster.ReadInputRegisters(UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.AllInstances.ReadInputsUInt16UInt16">
+            <summary>设置 ModbusIpMaster.ReadInputs(UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.AllInstances.ReadWriteMultipleRegistersUInt16UInt16UInt16UInt16Array">
+            <summary>设置 ModbusIpMaster.ReadWriteMultipleRegisters(UInt16 startReadAddress, UInt16 numberOfPointsToRead, UInt16 startWriteAddress, UInt16[] writeData) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.AllInstances.WriteMultipleCoilsUInt16BooleanArray">
+            <summary>设置 ModbusIpMaster.WriteMultipleCoils(UInt16 startAddress, Boolean[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.AllInstances.WriteMultipleRegistersUInt16UInt16Array">
+            <summary>设置 ModbusIpMaster.WriteMultipleRegisters(UInt16 startAddress, UInt16[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.AllInstances.WriteSingleCoilUInt16Boolean">
+            <summary>设置 ModbusIpMaster.WriteSingleCoil(UInt16 coilAddress, Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusIpMaster.AllInstances.WriteSingleRegisterUInt16UInt16">
+            <summary>设置 ModbusIpMaster.WriteSingleRegister(UInt16 registerAddress, UInt16 value) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusMaster">
+            <summary>Modbus.Device.ModbusMaster 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusMaster.#ctor(Modbus.Device.ModbusMaster)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusMaster.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusMaster.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusMaster.Bind(Modbus.Device.IModbusMaster)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusMaster.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusMaster.ExecuteCustomMessageOf1IModbusMessage``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Modbus.Message.IModbusMessage,``0})">
+            <summary>设置 ModbusMaster.ExecuteCustomMessage(IModbusMessage request) 的 填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusMaster.ValidateDataOf1StringM0ArrayInt32``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.String,``0[],System.Int32})">
+            <summary>设置 ModbusMaster.ValidateData(String argumentName, !!0[] data, Int32 maxDataLength) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.ConstructorModbusTransport">
+            <summary>设置 ModbusMaster.ModbusMaster(ModbusTransport transport) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.ReadCoilsByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadCoils(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.ReadDiscretesByteByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadDiscretes(Byte functionCode, Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.ReadHoldingRegistersByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadHoldingRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.ReadInputRegistersByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadInputRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.ReadInputsByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadInputs(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.ReadRegistersByteByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadRegisters(Byte functionCode, Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.ReadWriteMultipleRegistersByteUInt16UInt16UInt16UInt16Array">
+            <summary>设置 ModbusMaster.ReadWriteMultipleRegisters(Byte slaveAddress, UInt16 startReadAddress, UInt16 numberOfPointsToRead, UInt16 startWriteAddress, UInt16[] writeData) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.ValidateNumberOfPointsStringUInt16UInt16">
+            <summary>设置 ModbusMaster.ValidateNumberOfPoints(String argumentName, UInt16 numberOfPoints, UInt16 maxNumberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.WriteMultipleCoilsByteUInt16BooleanArray">
+            <summary>设置 ModbusMaster.WriteMultipleCoils(Byte slaveAddress, UInt16 startAddress, Boolean[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.WriteMultipleRegistersByteUInt16UInt16Array">
+            <summary>设置 ModbusMaster.WriteMultipleRegisters(Byte slaveAddress, UInt16 startAddress, UInt16[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.WriteSingleCoilByteUInt16Boolean">
+            <summary>设置 ModbusMaster.WriteSingleCoil(Byte slaveAddress, UInt16 coilAddress, Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.WriteSingleRegisterByteUInt16UInt16">
+            <summary>设置 ModbusMaster.WriteSingleRegister(Byte slaveAddress, UInt16 registerAddress, UInt16 value) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusMaster.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.ExecuteCustomMessageOf1IModbusMessage``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Modbus.Device.ModbusMaster,Modbus.Message.IModbusMessage,``0})">
+            <summary>设置 ModbusMaster.ExecuteCustomMessage(IModbusMessage request) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.ReadCoilsByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadCoils(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.ReadDiscretesByteByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadDiscretes(Byte functionCode, Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.ReadHoldingRegistersByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadHoldingRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.ReadInputRegistersByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadInputRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.ReadInputsByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadInputs(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.ReadRegistersByteByteUInt16UInt16">
+            <summary>设置 ModbusMaster.ReadRegisters(Byte functionCode, Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.ReadWriteMultipleRegistersByteUInt16UInt16UInt16UInt16Array">
+            <summary>设置 ModbusMaster.ReadWriteMultipleRegisters(Byte slaveAddress, UInt16 startReadAddress, UInt16 numberOfPointsToRead, UInt16 startWriteAddress, UInt16[] writeData) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.WriteMultipleCoilsByteUInt16BooleanArray">
+            <summary>设置 ModbusMaster.WriteMultipleCoils(Byte slaveAddress, UInt16 startAddress, Boolean[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.WriteMultipleRegistersByteUInt16UInt16Array">
+            <summary>设置 ModbusMaster.WriteMultipleRegisters(Byte slaveAddress, UInt16 startAddress, UInt16[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.WriteSingleCoilByteUInt16Boolean">
+            <summary>设置 ModbusMaster.WriteSingleCoil(Byte slaveAddress, UInt16 coilAddress, Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusMaster.AllInstances.WriteSingleRegisterByteUInt16UInt16">
+            <summary>设置 ModbusMaster.WriteSingleRegister(Byte slaveAddress, UInt16 registerAddress, UInt16 value) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusSerialMaster">
+            <summary>Modbus.Device.ModbusSerialMaster 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialMaster.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialMaster.#ctor(Modbus.Device.ModbusSerialMaster)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialMaster.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialMaster.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialMaster.Bind(Modbus.Device.IModbusMaster)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialMaster.Bind(Modbus.Device.IModbusSerialMaster)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialMaster.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.ConstructorModbusTransport">
+            <summary>设置 ModbusSerialMaster.ModbusSerialMaster(ModbusTransport transport) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.CreateAsciiIStreamResource">
+            <summary>设置 ModbusSerialMaster.CreateAscii(IStreamResource streamResource) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.CreateAsciiSerialPort">
+            <summary>设置 ModbusSerialMaster.CreateAscii(SerialPort serialPort) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.CreateAsciiTcpClient">
+            <summary>设置 ModbusSerialMaster.CreateAscii(TcpClient tcpClient) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.CreateAsciiUdpClient">
+            <summary>设置 ModbusSerialMaster.CreateAscii(UdpClient udpClient) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.CreateRtuIStreamResource">
+            <summary>设置 ModbusSerialMaster.CreateRtu(IStreamResource streamResource) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.CreateRtuSerialPort">
+            <summary>设置 ModbusSerialMaster.CreateRtu(SerialPort serialPort) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.CreateRtuTcpClient">
+            <summary>设置 ModbusSerialMaster.CreateRtu(TcpClient tcpClient) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.CreateRtuUdpClient">
+            <summary>设置 ModbusSerialMaster.CreateRtu(UdpClient udpClient) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.ReturnQueryDataByteUInt16">
+            <summary>设置 ModbusSerialMaster.ReturnQueryData(Byte slaveAddress, UInt16 data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.TransportModbusDeviceIModbusSerialMasterget">
+            <summary>设置 ModbusSerialMaster.Modbus.Device.IModbusSerialMaster.get_Transport() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusSerialMaster.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.AllInstances.ReturnQueryDataByteUInt16">
+            <summary>设置 ModbusSerialMaster.ReturnQueryData(Byte slaveAddress, UInt16 data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialMaster.AllInstances.TransportModbusDeviceIModbusSerialMasterget">
+            <summary>设置 ModbusSerialMaster.Modbus.Device.IModbusSerialMaster.get_Transport() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusSerialSlave">
+            <summary>Modbus.Device.ModbusSerialSlave 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialSlave.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialSlave.#ctor(Modbus.Device.ModbusSerialSlave)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialSlave.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialSlave.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSerialSlave.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.ConstructorByteModbusTransport">
+            <summary>设置 ModbusSerialSlave.ModbusSerialSlave(Byte unitId, ModbusTransport transport) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.CreateAsciiByteIStreamResource">
+            <summary>设置 ModbusSerialSlave.CreateAscii(Byte unitId, IStreamResource streamResource) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.CreateAsciiByteSerialPort">
+            <summary>设置 ModbusSerialSlave.CreateAscii(Byte unitId, SerialPort serialPort) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.CreateRtuByteIStreamResource">
+            <summary>设置 ModbusSerialSlave.CreateRtu(Byte unitId, IStreamResource streamResource) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.CreateRtuByteSerialPort">
+            <summary>设置 ModbusSerialSlave.CreateRtu(Byte unitId, SerialPort serialPort) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.Listen">
+            <summary>设置 ModbusSerialSlave.Listen() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.SerialTransportGet">
+            <summary>设置 ModbusSerialSlave.get_SerialTransport() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.StaticConstructor">
+            <summary>设置 ModbusSerialSlave.ModbusSerialSlave() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusSerialSlave.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.AllInstances.Listen">
+            <summary>设置 ModbusSerialSlave.Listen() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSerialSlave.AllInstances.SerialTransportGet">
+            <summary>设置 ModbusSerialSlave.get_SerialTransport() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusSlave">
+            <summary>Modbus.Device.ModbusSlave 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSlave.#ctor(Modbus.Device.ModbusSlave)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSlave.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSlave.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSlave.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.ApplyRequestIModbusMessage">
+            <summary>设置 ModbusSlave.ApplyRequest(IModbusMessage request) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.ConstructorByteModbusTransport">
+            <summary>设置 ModbusSlave.ModbusSlave(Byte unitId, ModbusTransport transport) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.DataStoreGet">
+            <summary>设置 ModbusSlave.get_DataStore() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.DataStoreSetDataStore">
+            <summary>设置 ModbusSlave.set_DataStore(DataStore value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.ModbusSlaveRequestReceivedAddEventHandlerOfModbusSlaveRequestEventArgs">
+            <summary>设置 ModbusSlave.add_ModbusSlaveRequestReceived(EventHandler`1&lt;ModbusSlaveRequestEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.ModbusSlaveRequestReceivedRemoveEventHandlerOfModbusSlaveRequestEventArgs">
+            <summary>设置 ModbusSlave.remove_ModbusSlaveRequestReceived(EventHandler`1&lt;ModbusSlaveRequestEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.StaticConstructor">
+            <summary>设置 ModbusSlave.ModbusSlave() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.UnitIdGet">
+            <summary>设置 ModbusSlave.get_UnitId() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.UnitIdSetByte">
+            <summary>设置 ModbusSlave.set_UnitId(Byte value) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusSlave.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.AllInstances.ApplyRequestIModbusMessage">
+            <summary>设置 ModbusSlave.ApplyRequest(IModbusMessage request) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.AllInstances.DataStoreGet">
+            <summary>设置 ModbusSlave.get_DataStore() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.AllInstances.DataStoreSetDataStore">
+            <summary>设置 ModbusSlave.set_DataStore(DataStore value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.AllInstances.ModbusSlaveRequestReceivedAddEventHandlerOfModbusSlaveRequestEventArgs">
+            <summary>设置 ModbusSlave.add_ModbusSlaveRequestReceived(EventHandler`1&lt;ModbusSlaveRequestEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.AllInstances.ModbusSlaveRequestReceivedRemoveEventHandlerOfModbusSlaveRequestEventArgs">
+            <summary>设置 ModbusSlave.remove_ModbusSlaveRequestReceived(EventHandler`1&lt;ModbusSlaveRequestEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.AllInstances.UnitIdGet">
+            <summary>设置 ModbusSlave.get_UnitId() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlave.AllInstances.UnitIdSetByte">
+            <summary>设置 ModbusSlave.set_UnitId(Byte value) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusSlaveRequestEventArgs">
+            <summary>Modbus.Device.ModbusSlaveRequestEventArgs 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSlaveRequestEventArgs.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSlaveRequestEventArgs.#ctor(Modbus.Device.ModbusSlaveRequestEventArgs)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSlaveRequestEventArgs.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusSlaveRequestEventArgs.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlaveRequestEventArgs.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlaveRequestEventArgs.ConstructorIModbusMessage">
+            <summary>设置 ModbusSlaveRequestEventArgs.ModbusSlaveRequestEventArgs(IModbusMessage message) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlaveRequestEventArgs.MessageGet">
+            <summary>设置 ModbusSlaveRequestEventArgs.get_Message() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusSlaveRequestEventArgs.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusSlaveRequestEventArgs.AllInstances.MessageGet">
+            <summary>设置 ModbusSlaveRequestEventArgs.get_Message() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusTcpSlave">
+            <summary>Modbus.Device.ModbusTcpSlave 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusTcpSlave.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusTcpSlave.#ctor(Modbus.Device.ModbusTcpSlave)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusTcpSlave.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusTcpSlave.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusTcpSlave.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.AcceptCompletedIAsyncResult">
+            <summary>设置 ModbusTcpSlave.AcceptCompleted(IAsyncResult ar) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.ConstructorByteTcpListener">
+            <summary>设置 ModbusTcpSlave.ModbusTcpSlave(Byte unitId, TcpListener tcpListener) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.CreateTcpByteTcpListener">
+            <summary>设置 ModbusTcpSlave.CreateTcp(Byte unitId, TcpListener tcpListener) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.DisposeBoolean">
+            <summary>设置 ModbusTcpSlave.Dispose(Boolean disposing) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.Listen">
+            <summary>设置 ModbusTcpSlave.Listen() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.MastersGet">
+            <summary>设置 ModbusTcpSlave.get_Masters() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.RemoveMasterString">
+            <summary>设置 ModbusTcpSlave.RemoveMaster(String endPoint) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.ServerGet">
+            <summary>设置 ModbusTcpSlave.get_Server() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusTcpSlave.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.AllInstances.AcceptCompletedIAsyncResult">
+            <summary>设置 ModbusTcpSlave.AcceptCompleted(IAsyncResult ar) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.AllInstances.DisposeBoolean">
+            <summary>设置 ModbusTcpSlave.Dispose(Boolean disposing) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.AllInstances.Listen">
+            <summary>设置 ModbusTcpSlave.Listen() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.AllInstances.MastersGet">
+            <summary>设置 ModbusTcpSlave.get_Masters() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.AllInstances.RemoveMasterString">
+            <summary>设置 ModbusTcpSlave.RemoveMaster(String endPoint) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusTcpSlave.AllInstances.ServerGet">
+            <summary>设置 ModbusTcpSlave.get_Server() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusUdpSlave">
+            <summary>Modbus.Device.ModbusUdpSlave 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusUdpSlave.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusUdpSlave.#ctor(Modbus.Device.ModbusUdpSlave)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusUdpSlave.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusUdpSlave.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.ShimModbusUdpSlave.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusUdpSlave.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusUdpSlave.ConstructorByteUdpClient">
+            <summary>设置 ModbusUdpSlave.ModbusUdpSlave(Byte unitId, UdpClient udpClient) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusUdpSlave.CreateUdpByteUdpClient">
+            <summary>设置 ModbusUdpSlave.CreateUdp(Byte unitId, UdpClient client) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusUdpSlave.CreateUdpUdpClient">
+            <summary>设置 ModbusUdpSlave.CreateUdp(UdpClient client) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusUdpSlave.Listen">
+            <summary>设置 ModbusUdpSlave.Listen() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusUdpSlave.StaticConstructor">
+            <summary>设置 ModbusUdpSlave.ModbusUdpSlave() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.ShimModbusUdpSlave.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.ShimModbusUdpSlave.AllInstances.Listen">
+            <summary>设置 ModbusUdpSlave.Listen() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.StubIModbusMaster">
+            <summary>Modbus.Device.IModbusMaster 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.#ctor">
+            <summary>初始化 type StubIModbusMaster 的新实例</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.Dispose">
+            <summary>设置 IDisposable.Dispose() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.m::Modbus#Device#IModbusMaster#ReadCoils(System.Byte,System.UInt16,System.UInt16)">
+            <summary>设置 IModbusMaster.ReadCoils(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.m::Modbus#Device#IModbusMaster#ReadHoldingRegisters(System.Byte,System.UInt16,System.UInt16)">
+            <summary>设置 IModbusMaster.ReadHoldingRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.m::Modbus#Device#IModbusMaster#ReadInputRegisters(System.Byte,System.UInt16,System.UInt16)">
+            <summary>设置 IModbusMaster.ReadInputRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.m::Modbus#Device#IModbusMaster#ReadInputs(System.Byte,System.UInt16,System.UInt16)">
+            <summary>设置 IModbusMaster.ReadInputs(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.m::Modbus#Device#IModbusMaster#ReadWriteMultipleRegisters(System.Byte,System.UInt16,System.UInt16,System.UInt16,System.UInt16[])">
+            <summary>设置 IModbusMaster.ReadWriteMultipleRegisters(Byte slaveAddress, UInt16 startReadAddress, UInt16 numberOfPointsToRead, UInt16 startWriteAddress, UInt16[] writeData) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.m::Modbus#Device#IModbusMaster#WriteMultipleCoils(System.Byte,System.UInt16,System.Boolean[])">
+            <summary>设置 IModbusMaster.WriteMultipleCoils(Byte slaveAddress, UInt16 startAddress, Boolean[] data) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.m::Modbus#Device#IModbusMaster#WriteMultipleRegisters(System.Byte,System.UInt16,System.UInt16[])">
+            <summary>设置 IModbusMaster.WriteMultipleRegisters(Byte slaveAddress, UInt16 startAddress, UInt16[] data) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.m::Modbus#Device#IModbusMaster#WriteSingleCoil(System.Byte,System.UInt16,System.Boolean)">
+            <summary>设置 IModbusMaster.WriteSingleCoil(Byte slaveAddress, UInt16 coilAddress, Boolean value) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.m::Modbus#Device#IModbusMaster#WriteSingleRegister(System.Byte,System.UInt16,System.UInt16)">
+            <summary>设置 IModbusMaster.WriteSingleRegister(Byte slaveAddress, UInt16 registerAddress, UInt16 value) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.ReadCoilsByteUInt16UInt16">
+            <summary>设置 IModbusMaster.ReadCoils(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.ReadHoldingRegistersByteUInt16UInt16">
+            <summary>设置 IModbusMaster.ReadHoldingRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.ReadInputRegistersByteUInt16UInt16">
+            <summary>设置 IModbusMaster.ReadInputRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.ReadInputsByteUInt16UInt16">
+            <summary>设置 IModbusMaster.ReadInputs(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.ReadWriteMultipleRegistersByteUInt16UInt16UInt16UInt16Array">
+            <summary>设置 IModbusMaster.ReadWriteMultipleRegisters(Byte slaveAddress, UInt16 startReadAddress, UInt16 numberOfPointsToRead, UInt16 startWriteAddress, UInt16[] writeData) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusMaster.global::System#IDisposable#Dispose">
+            <summary>设置 IDisposable.Dispose() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.TransportGet">
+            <summary>设置 IModbusMaster.get_Transport() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.WriteMultipleCoilsByteUInt16BooleanArray">
+            <summary>设置 IModbusMaster.WriteMultipleCoils(Byte slaveAddress, UInt16 startAddress, Boolean[] data) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.WriteMultipleRegistersByteUInt16UInt16Array">
+            <summary>设置 IModbusMaster.WriteMultipleRegisters(Byte slaveAddress, UInt16 startAddress, UInt16[] data) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.WriteSingleCoilByteUInt16Boolean">
+            <summary>设置 IModbusMaster.WriteSingleCoil(Byte slaveAddress, UInt16 coilAddress, Boolean value) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusMaster.WriteSingleRegisterByteUInt16UInt16">
+            <summary>设置 IModbusMaster.WriteSingleRegister(Byte slaveAddress, UInt16 registerAddress, UInt16 value) 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.StubIModbusMaster.m::Modbus#Device#IModbusMaster#Transport">
+            <summary>设置 IModbusMaster.get_Transport() 的 stub</summary>
+        </member>
+        <member name="T:Modbus.Device.Fakes.StubIModbusSerialMaster">
+            <summary>Modbus.Device.IModbusSerialMaster 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.#ctor">
+            <summary>初始化 type StubIModbusSerialMaster 的新实例</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.Dispose">
+            <summary>设置 IDisposable.Dispose() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusMaster#ReadCoils(System.Byte,System.UInt16,System.UInt16)">
+            <summary>设置 IModbusMaster.ReadCoils(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusMaster#ReadHoldingRegisters(System.Byte,System.UInt16,System.UInt16)">
+            <summary>设置 IModbusMaster.ReadHoldingRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusMaster#ReadInputRegisters(System.Byte,System.UInt16,System.UInt16)">
+            <summary>设置 IModbusMaster.ReadInputRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusMaster#ReadInputs(System.Byte,System.UInt16,System.UInt16)">
+            <summary>设置 IModbusMaster.ReadInputs(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusMaster#ReadWriteMultipleRegisters(System.Byte,System.UInt16,System.UInt16,System.UInt16,System.UInt16[])">
+            <summary>设置 IModbusMaster.ReadWriteMultipleRegisters(Byte slaveAddress, UInt16 startReadAddress, UInt16 numberOfPointsToRead, UInt16 startWriteAddress, UInt16[] writeData) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusMaster#WriteMultipleCoils(System.Byte,System.UInt16,System.Boolean[])">
+            <summary>设置 IModbusMaster.WriteMultipleCoils(Byte slaveAddress, UInt16 startAddress, Boolean[] data) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusMaster#WriteMultipleRegisters(System.Byte,System.UInt16,System.UInt16[])">
+            <summary>设置 IModbusMaster.WriteMultipleRegisters(Byte slaveAddress, UInt16 startAddress, UInt16[] data) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusMaster#WriteSingleCoil(System.Byte,System.UInt16,System.Boolean)">
+            <summary>设置 IModbusMaster.WriteSingleCoil(Byte slaveAddress, UInt16 coilAddress, Boolean value) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusMaster#WriteSingleRegister(System.Byte,System.UInt16,System.UInt16)">
+            <summary>设置 IModbusMaster.WriteSingleRegister(Byte slaveAddress, UInt16 registerAddress, UInt16 value) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusSerialMaster#ReturnQueryData(System.Byte,System.UInt16)">
+            <summary>设置 IModbusSerialMaster.ReturnQueryData(Byte slaveAddress, UInt16 data) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.ReadCoilsByteUInt16UInt16">
+            <summary>设置 IModbusMaster.ReadCoils(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.ReadHoldingRegistersByteUInt16UInt16">
+            <summary>设置 IModbusMaster.ReadHoldingRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.ReadInputRegistersByteUInt16UInt16">
+            <summary>设置 IModbusMaster.ReadInputRegisters(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.ReadInputsByteUInt16UInt16">
+            <summary>设置 IModbusMaster.ReadInputs(Byte slaveAddress, UInt16 startAddress, UInt16 numberOfPoints) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.ReadWriteMultipleRegistersByteUInt16UInt16UInt16UInt16Array">
+            <summary>设置 IModbusMaster.ReadWriteMultipleRegisters(Byte slaveAddress, UInt16 startReadAddress, UInt16 numberOfPointsToRead, UInt16 startWriteAddress, UInt16[] writeData) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.ReturnQueryDataByteUInt16">
+            <summary>设置 IModbusSerialMaster.ReturnQueryData(Byte slaveAddress, UInt16 data) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Device.Fakes.StubIModbusSerialMaster.global::System#IDisposable#Dispose">
+            <summary>设置 IDisposable.Dispose() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.TransportGet">
+            <summary>设置 IModbusSerialMaster.get_Transport() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.TransportGet01">
+            <summary>设置 IModbusMaster.get_Transport() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.WriteMultipleCoilsByteUInt16BooleanArray">
+            <summary>设置 IModbusMaster.WriteMultipleCoils(Byte slaveAddress, UInt16 startAddress, Boolean[] data) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.WriteMultipleRegistersByteUInt16UInt16Array">
+            <summary>设置 IModbusMaster.WriteMultipleRegisters(Byte slaveAddress, UInt16 startAddress, UInt16[] data) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.WriteSingleCoilByteUInt16Boolean">
+            <summary>设置 IModbusMaster.WriteSingleCoil(Byte slaveAddress, UInt16 coilAddress, Boolean value) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Device.Fakes.StubIModbusSerialMaster.WriteSingleRegisterByteUInt16UInt16">
+            <summary>设置 IModbusMaster.WriteSingleRegister(Byte slaveAddress, UInt16 registerAddress, UInt16 value) 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusSerialMaster#Transport">
+            <summary>设置 IModbusSerialMaster.get_Transport() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Device.Fakes.StubIModbusSerialMaster.m::Modbus#Device#IModbusMaster#Transport">
+            <summary>设置 IModbusMaster.get_Transport() 的 stub</summary>
+        </member>
+        <member name="T:Modbus.Fakes.ShimSlaveException">
+            <summary>Modbus.SlaveException 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Fakes.ShimSlaveException.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Fakes.ShimSlaveException.#ctor(Modbus.SlaveException)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Fakes.ShimSlaveException.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Fakes.ShimSlaveException.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.Fakes.ShimSlaveException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.Constructor">
+            <summary>设置 SlaveException.SlaveException() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.ConstructorSerializationInfoStreamingContext">
+            <summary>设置 SlaveException.SlaveException(SerializationInfo info, StreamingContext context) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.ConstructorString">
+            <summary>设置 SlaveException.SlaveException(String message) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.ConstructorStringException">
+            <summary>设置 SlaveException.SlaveException(String message, Exception innerException) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.FunctionCodeGet">
+            <summary>设置 SlaveException.get_FunctionCode() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>设置 SlaveException.GetObjectData(SerializationInfo info, StreamingContext context) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.MessageGet">
+            <summary>设置 SlaveException.get_Message() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.SlaveAddressGet">
+            <summary>设置 SlaveException.get_SlaveAddress() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.SlaveExceptionCodeGet">
+            <summary>设置 SlaveException.get_SlaveExceptionCode() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Fakes.ShimSlaveException.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.AllInstances.FunctionCodeGet">
+            <summary>设置 SlaveException.get_FunctionCode() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>设置 SlaveException.GetObjectData(SerializationInfo info, StreamingContext context) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.AllInstances.MessageGet">
+            <summary>设置 SlaveException.get_Message() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.AllInstances.SlaveAddressGet">
+            <summary>设置 SlaveException.get_SlaveAddress() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Fakes.ShimSlaveException.AllInstances.SlaveExceptionCodeGet">
+            <summary>设置 SlaveException.get_SlaveExceptionCode() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Fakes.StubSlaveException">
+            <summary>Modbus.SlaveException 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Fakes.StubSlaveException.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Fakes.StubSlaveException.#ctor(System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Fakes.StubSlaveException.#ctor(System.String,System.Exception)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Fakes.StubSlaveException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Fakes.StubSlaveException.AttachBackingFieldToHelpLink">
+            <summary>附加委托以将 StubSlaveException.HelpLink 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="M:Modbus.Fakes.StubSlaveException.AttachBackingFieldToSource">
+            <summary>附加委托以将 StubSlaveException.Source 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="F:Modbus.Fakes.StubSlaveException.DataGet">
+            <summary>设置 Exception.get_Data() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Fakes.StubSlaveException.GetBaseException">
+            <summary>设置 Exception.GetBaseException() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Fakes.StubSlaveException.GetBaseException01">
+            <summary>设置 Exception.GetBaseException() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Fakes.StubSlaveException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>设置 SlaveException.GetObjectData(SerializationInfo info, StreamingContext context) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Fakes.StubSlaveException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>设置 SlaveException.GetObjectData(SerializationInfo info, StreamingContext context) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Fakes.StubSlaveException.HelpLinkGet">
+            <summary>设置 Exception.get_HelpLink() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Fakes.StubSlaveException.HelpLinkSetString">
+            <summary>设置 Exception.set_HelpLink(String value) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Fakes.StubSlaveException.InitializeStub">
+            <summary>初始化 type StubSlaveException 的新实例</summary>
+        </member>
+        <member name="F:Modbus.Fakes.StubSlaveException.MessageGet">
+            <summary>设置 SlaveException.get_Message() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Fakes.StubSlaveException.SourceGet">
+            <summary>设置 Exception.get_Source() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Fakes.StubSlaveException.SourceSetString">
+            <summary>设置 Exception.set_Source(String value) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Fakes.StubSlaveException.StackTraceGet">
+            <summary>设置 Exception.get_StackTrace() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Fakes.StubSlaveException.ToString">
+            <summary>设置 Exception.ToString() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Fakes.StubSlaveException.ToString01">
+            <summary>设置 Exception.ToString() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Fakes.StubSlaveException.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:Modbus.Fakes.StubSlaveException.Data">
+            <summary>设置 Exception.get_Data() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Fakes.StubSlaveException.HelpLink">
+            <summary>设置 Exception.get_HelpLink() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Fakes.StubSlaveException.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:Modbus.Fakes.StubSlaveException.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="P:Modbus.Fakes.StubSlaveException.Message">
+            <summary>设置 SlaveException.get_Message() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Fakes.StubSlaveException.Source">
+            <summary>设置 Exception.get_Source() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Fakes.StubSlaveException.StackTrace">
+            <summary>设置 Exception.get_StackTrace() 的 stub</summary>
+        </member>
+        <member name="T:Modbus.IO.Fakes.ShimEmptyTransport">
+            <summary>Modbus.IO.EmptyTransport 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimEmptyTransport.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimEmptyTransport.#ctor(Modbus.IO.EmptyTransport)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimEmptyTransport.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimEmptyTransport.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimEmptyTransport.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimEmptyTransport.ReadResponseOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Modbus.Message.IModbusMessage})">
+            <summary>设置 EmptyTransport.ReadResponse() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimEmptyTransport.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimEmptyTransport.BuildMessageFrameIModbusMessage">
+            <summary>设置 EmptyTransport.BuildMessageFrame(IModbusMessage message) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimEmptyTransport.Constructor">
+            <summary>设置 EmptyTransport.EmptyTransport() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimEmptyTransport.OnValidateResponseIModbusMessageIModbusMessage">
+            <summary>设置 EmptyTransport.OnValidateResponse(IModbusMessage request, IModbusMessage response) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimEmptyTransport.ReadRequest">
+            <summary>设置 EmptyTransport.ReadRequest() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimEmptyTransport.WriteIModbusMessage">
+            <summary>设置 EmptyTransport.Write(IModbusMessage message) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.IO.Fakes.ShimEmptyTransport.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimEmptyTransport.AllInstances.ReadResponseOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Modbus.IO.EmptyTransport,Modbus.Message.IModbusMessage})">
+            <summary>设置 EmptyTransport.ReadResponse() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimEmptyTransport.AllInstances.BuildMessageFrameIModbusMessage">
+            <summary>设置 EmptyTransport.BuildMessageFrame(IModbusMessage message) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimEmptyTransport.AllInstances.OnValidateResponseIModbusMessageIModbusMessage">
+            <summary>设置 EmptyTransport.OnValidateResponse(IModbusMessage request, IModbusMessage response) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimEmptyTransport.AllInstances.ReadRequest">
+            <summary>设置 EmptyTransport.ReadRequest() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimEmptyTransport.AllInstances.WriteIModbusMessage">
+            <summary>设置 EmptyTransport.Write(IModbusMessage message) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.IO.Fakes.ShimModbusSerialTransport">
+            <summary>Modbus.IO.ModbusSerialTransport 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusSerialTransport.#ctor(Modbus.IO.ModbusSerialTransport)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusSerialTransport.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusSerialTransport.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusSerialTransport.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusSerialTransport.CreateResponseOf1ByteArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Byte[],Modbus.Message.IModbusMessage})">
+            <summary>设置 ModbusSerialTransport.CreateResponse(Byte[] frame) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.CheckFrameGet">
+            <summary>设置 ModbusSerialTransport.get_CheckFrame() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.CheckFrameSetBoolean">
+            <summary>设置 ModbusSerialTransport.set_CheckFrame(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.ConstructorIStreamResource">
+            <summary>设置 ModbusSerialTransport.ModbusSerialTransport(IStreamResource streamResource) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.DiscardInBuffer">
+            <summary>设置 ModbusSerialTransport.DiscardInBuffer() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.OnValidateResponseIModbusMessageIModbusMessage">
+            <summary>设置 ModbusSerialTransport.OnValidateResponse(IModbusMessage request, IModbusMessage response) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.StaticConstructor">
+            <summary>设置 ModbusSerialTransport.ModbusSerialTransport() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.WriteIModbusMessage">
+            <summary>设置 ModbusSerialTransport.Write(IModbusMessage message) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.IO.Fakes.ShimModbusSerialTransport.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusSerialTransport.AllInstances.CreateResponseOf1ByteArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Modbus.IO.ModbusSerialTransport,System.Byte[],Modbus.Message.IModbusMessage})">
+            <summary>设置 ModbusSerialTransport.CreateResponse(Byte[] frame) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.AllInstances.CheckFrameGet">
+            <summary>设置 ModbusSerialTransport.get_CheckFrame() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.AllInstances.CheckFrameSetBoolean">
+            <summary>设置 ModbusSerialTransport.set_CheckFrame(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.AllInstances.DiscardInBuffer">
+            <summary>设置 ModbusSerialTransport.DiscardInBuffer() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.AllInstances.OnValidateResponseIModbusMessageIModbusMessage">
+            <summary>设置 ModbusSerialTransport.OnValidateResponse(IModbusMessage request, IModbusMessage response) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusSerialTransport.AllInstances.WriteIModbusMessage">
+            <summary>设置 ModbusSerialTransport.Write(IModbusMessage message) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.IO.Fakes.ShimModbusTransport">
+            <summary>Modbus.IO.ModbusTransport 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusTransport.#ctor(Modbus.IO.ModbusTransport)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusTransport.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusTransport.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusTransport.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusTransport.CreateResponseOf1ByteArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Byte[],Modbus.Message.IModbusMessage})">
+            <summary>设置 ModbusTransport.CreateResponse(Byte[] frame) 的 填充码</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusTransport.UnicastMessageOf1IModbusMessage``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Modbus.Message.IModbusMessage,``0})">
+            <summary>设置 ModbusTransport.UnicastMessage(IModbusMessage message) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.Constructor">
+            <summary>设置 ModbusTransport.ModbusTransport() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.ConstructorIStreamResource">
+            <summary>设置 ModbusTransport.ModbusTransport(IStreamResource streamResource) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.Dispose">
+            <summary>设置 ModbusTransport.Dispose() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.DisposeBoolean">
+            <summary>设置 ModbusTransport.Dispose(Boolean disposing) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.ReadTimeoutGet">
+            <summary>设置 ModbusTransport.get_ReadTimeout() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.ReadTimeoutSetInt32">
+            <summary>设置 ModbusTransport.set_ReadTimeout(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.RetriesGet">
+            <summary>设置 ModbusTransport.get_Retries() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.RetriesSetInt32">
+            <summary>设置 ModbusTransport.set_Retries(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.StaticConstructor">
+            <summary>设置 ModbusTransport.ModbusTransport() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.StreamResourceGet">
+            <summary>设置 ModbusTransport.get_StreamResource() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.ValidateResponseIModbusMessageIModbusMessage">
+            <summary>设置 ModbusTransport.ValidateResponse(IModbusMessage request, IModbusMessage response) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.WaitToRetryMillisecondsGet">
+            <summary>设置 ModbusTransport.get_WaitToRetryMilliseconds() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.WaitToRetryMillisecondsSetInt32">
+            <summary>设置 ModbusTransport.set_WaitToRetryMilliseconds(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.WriteTimeoutGet">
+            <summary>设置 ModbusTransport.get_WriteTimeout() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.WriteTimeoutSetInt32">
+            <summary>设置 ModbusTransport.set_WriteTimeout(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.IO.Fakes.ShimModbusTransport.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.CreateResponseOf1ByteArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Modbus.IO.ModbusTransport,System.Byte[],Modbus.Message.IModbusMessage})">
+            <summary>设置 ModbusTransport.CreateResponse(Byte[] frame) 的 填充码</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.UnicastMessageOf1IModbusMessage``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Modbus.IO.ModbusTransport,Modbus.Message.IModbusMessage,``0})">
+            <summary>设置 ModbusTransport.UnicastMessage(IModbusMessage message) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.Dispose">
+            <summary>设置 ModbusTransport.Dispose() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.DisposeBoolean">
+            <summary>设置 ModbusTransport.Dispose(Boolean disposing) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.ReadTimeoutGet">
+            <summary>设置 ModbusTransport.get_ReadTimeout() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.ReadTimeoutSetInt32">
+            <summary>设置 ModbusTransport.set_ReadTimeout(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.RetriesGet">
+            <summary>设置 ModbusTransport.get_Retries() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.RetriesSetInt32">
+            <summary>设置 ModbusTransport.set_Retries(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.StreamResourceGet">
+            <summary>设置 ModbusTransport.get_StreamResource() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.ValidateResponseIModbusMessageIModbusMessage">
+            <summary>设置 ModbusTransport.ValidateResponse(IModbusMessage request, IModbusMessage response) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.WaitToRetryMillisecondsGet">
+            <summary>设置 ModbusTransport.get_WaitToRetryMilliseconds() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.WaitToRetryMillisecondsSetInt32">
+            <summary>设置 ModbusTransport.set_WaitToRetryMilliseconds(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.WriteTimeoutGet">
+            <summary>设置 ModbusTransport.get_WriteTimeout() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.ShimModbusTransport.AllInstances.WriteTimeoutSetInt32">
+            <summary>设置 ModbusTransport.set_WriteTimeout(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.IO.Fakes.StubIStreamResource">
+            <summary>Modbus.IO.IStreamResource 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.StubIStreamResource.#ctor">
+            <summary>初始化 type StubIStreamResource 的新实例</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.StubIStreamResource.AttachBackingFieldToReadTimeout">
+            <summary>附加委托以将 StubIStreamResource.ReadTimeout 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.StubIStreamResource.AttachBackingFieldToWriteTimeout">
+            <summary>附加委托以将 StubIStreamResource.WriteTimeout 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="F:Modbus.IO.Fakes.StubIStreamResource.DiscardInBuffer">
+            <summary>设置 IStreamResource.DiscardInBuffer() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.IO.Fakes.StubIStreamResource.Dispose">
+            <summary>设置 IDisposable.Dispose() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.IO.Fakes.StubIStreamResource.InfiniteTimeoutGet">
+            <summary>设置 IStreamResource.get_InfiniteTimeout() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.StubIStreamResource.m::Modbus#IO#IStreamResource#DiscardInBuffer">
+            <summary>设置 IStreamResource.DiscardInBuffer() 的 存根</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.StubIStreamResource.m::Modbus#IO#IStreamResource#Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>设置 IStreamResource.Read(Byte[] buffer, Int32 offset, Int32 count) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.StubIStreamResource.m::Modbus#IO#IStreamResource#Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>设置 IStreamResource.Write(Byte[] buffer, Int32 offset, Int32 count) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.IO.Fakes.StubIStreamResource.ReadByteArrayInt32Int32">
+            <summary>设置 IStreamResource.Read(Byte[] buffer, Int32 offset, Int32 count) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.IO.Fakes.StubIStreamResource.ReadTimeoutGet">
+            <summary>设置 IStreamResource.get_ReadTimeout() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.IO.Fakes.StubIStreamResource.ReadTimeoutSetInt32">
+            <summary>设置 IStreamResource.set_ReadTimeout(Int32 value) 的 stub</summary>
+        </member>
+        <member name="M:Modbus.IO.Fakes.StubIStreamResource.global::System#IDisposable#Dispose">
+            <summary>设置 IDisposable.Dispose() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.IO.Fakes.StubIStreamResource.WriteByteArrayInt32Int32">
+            <summary>设置 IStreamResource.Write(Byte[] buffer, Int32 offset, Int32 count) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.IO.Fakes.StubIStreamResource.WriteTimeoutGet">
+            <summary>设置 IStreamResource.get_WriteTimeout() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.IO.Fakes.StubIStreamResource.WriteTimeoutSetInt32">
+            <summary>设置 IStreamResource.set_WriteTimeout(Int32 value) 的 stub</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.StubIStreamResource.m::Modbus#IO#IStreamResource#InfiniteTimeout">
+            <summary>设置 IStreamResource.get_InfiniteTimeout() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.StubIStreamResource.m::Modbus#IO#IStreamResource#ReadTimeout">
+            <summary>设置 IStreamResource.get_ReadTimeout() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.IO.Fakes.StubIStreamResource.m::Modbus#IO#IStreamResource#WriteTimeout">
+            <summary>设置 IStreamResource.get_WriteTimeout() 的 stub</summary>
+        </member>
+        <member name="T:Modbus.Message.Fakes.StubIModbusMessage">
+            <summary>Modbus.Message.IModbusMessage 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusMessage.#ctor">
+            <summary>初始化 type StubIModbusMessage 的新实例</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusMessage.AttachBackingFieldToFunctionCode">
+            <summary>附加委托以将 StubIModbusMessage.FunctionCode 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusMessage.AttachBackingFieldToSlaveAddress">
+            <summary>附加委托以将 StubIModbusMessage.SlaveAddress 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusMessage.AttachBackingFieldToTransactionId">
+            <summary>附加委托以将 StubIModbusMessage.TransactionId 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusMessage.FunctionCodeGet">
+            <summary>设置 IModbusMessage.get_FunctionCode() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusMessage.FunctionCodeSetByte">
+            <summary>设置 IModbusMessage.set_FunctionCode(Byte value) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusMessage.InitializeByteArray">
+            <summary>设置 IModbusMessage.Initialize(Byte[] frame) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusMessage.MessageFrameGet">
+            <summary>设置 IModbusMessage.get_MessageFrame() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusMessage.m::Modbus#Message#IModbusMessage#Initialize(System.Byte[])">
+            <summary>设置 IModbusMessage.Initialize(Byte[] frame) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusMessage.ProtocolDataUnitGet">
+            <summary>设置 IModbusMessage.get_ProtocolDataUnit() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusMessage.SlaveAddressGet">
+            <summary>设置 IModbusMessage.get_SlaveAddress() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusMessage.SlaveAddressSetByte">
+            <summary>设置 IModbusMessage.set_SlaveAddress(Byte value) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusMessage.TransactionIdGet">
+            <summary>设置 IModbusMessage.get_TransactionId() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusMessage.TransactionIdSetUInt16">
+            <summary>设置 IModbusMessage.set_TransactionId(UInt16 value) 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Message.Fakes.StubIModbusMessage.m::Modbus#Message#IModbusMessage#FunctionCode">
+            <summary>设置 IModbusMessage.get_FunctionCode() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Message.Fakes.StubIModbusMessage.m::Modbus#Message#IModbusMessage#MessageFrame">
+            <summary>设置 IModbusMessage.get_MessageFrame() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Message.Fakes.StubIModbusMessage.m::Modbus#Message#IModbusMessage#ProtocolDataUnit">
+            <summary>设置 IModbusMessage.get_ProtocolDataUnit() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Message.Fakes.StubIModbusMessage.m::Modbus#Message#IModbusMessage#SlaveAddress">
+            <summary>设置 IModbusMessage.get_SlaveAddress() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Message.Fakes.StubIModbusMessage.m::Modbus#Message#IModbusMessage#TransactionId">
+            <summary>设置 IModbusMessage.get_TransactionId() 的 stub</summary>
+        </member>
+        <member name="T:Modbus.Message.Fakes.StubIModbusRequest">
+            <summary>Modbus.Message.IModbusRequest 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusRequest.#ctor">
+            <summary>初始化 type StubIModbusRequest 的新实例</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusRequest.AttachBackingFieldToFunctionCode">
+            <summary>附加委托以将 StubIModbusRequest.FunctionCode 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusRequest.AttachBackingFieldToSlaveAddress">
+            <summary>附加委托以将 StubIModbusRequest.SlaveAddress 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusRequest.AttachBackingFieldToTransactionId">
+            <summary>附加委托以将 StubIModbusRequest.TransactionId 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusRequest.FunctionCodeGet">
+            <summary>设置 IModbusMessage.get_FunctionCode() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusRequest.FunctionCodeSetByte">
+            <summary>设置 IModbusMessage.set_FunctionCode(Byte value) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusRequest.InitializeByteArray">
+            <summary>设置 IModbusMessage.Initialize(Byte[] frame) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusRequest.MessageFrameGet">
+            <summary>设置 IModbusMessage.get_MessageFrame() 的 stub</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusRequest.m::Modbus#Message#IModbusMessage#Initialize(System.Byte[])">
+            <summary>设置 IModbusMessage.Initialize(Byte[] frame) 的 存根</summary>
+        </member>
+        <member name="M:Modbus.Message.Fakes.StubIModbusRequest.m::Modbus#Message#IModbusRequest#ValidateResponse(Modbus.Message.IModbusMessage)">
+            <summary>设置 IModbusRequest.ValidateResponse(IModbusMessage response) 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusRequest.ProtocolDataUnitGet">
+            <summary>设置 IModbusMessage.get_ProtocolDataUnit() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusRequest.SlaveAddressGet">
+            <summary>设置 IModbusMessage.get_SlaveAddress() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusRequest.SlaveAddressSetByte">
+            <summary>设置 IModbusMessage.set_SlaveAddress(Byte value) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusRequest.TransactionIdGet">
+            <summary>设置 IModbusMessage.get_TransactionId() 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusRequest.TransactionIdSetUInt16">
+            <summary>设置 IModbusMessage.set_TransactionId(UInt16 value) 的 stub</summary>
+        </member>
+        <member name="F:Modbus.Message.Fakes.StubIModbusRequest.ValidateResponseIModbusMessage">
+            <summary>设置 IModbusRequest.ValidateResponse(IModbusMessage response) 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Message.Fakes.StubIModbusRequest.m::Modbus#Message#IModbusMessage#FunctionCode">
+            <summary>设置 IModbusMessage.get_FunctionCode() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Message.Fakes.StubIModbusRequest.m::Modbus#Message#IModbusMessage#MessageFrame">
+            <summary>设置 IModbusMessage.get_MessageFrame() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Message.Fakes.StubIModbusRequest.m::Modbus#Message#IModbusMessage#ProtocolDataUnit">
+            <summary>设置 IModbusMessage.get_ProtocolDataUnit() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Message.Fakes.StubIModbusRequest.m::Modbus#Message#IModbusMessage#SlaveAddress">
+            <summary>设置 IModbusMessage.get_SlaveAddress() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Message.Fakes.StubIModbusRequest.m::Modbus#Message#IModbusMessage#TransactionId">
+            <summary>设置 IModbusMessage.get_TransactionId() 的 stub</summary>
+        </member>
+        <member name="T:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2">
+            <summary>Modbus.Utility.DiscriminatedUnion`2 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.#ctor(Modbus.Utility.DiscriminatedUnion{`0,`1})">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.AGet">
+            <summary>设置 DiscriminatedUnion`2.get_A() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.BGet">
+            <summary>设置 DiscriminatedUnion`2.get_B() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.Constructor">
+            <summary>设置 DiscriminatedUnion`2.DiscriminatedUnion`2() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.CreateAT0">
+            <summary>设置 DiscriminatedUnion`2.CreateA(!0 a) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.CreateBT1">
+            <summary>设置 DiscriminatedUnion`2.CreateB(!1 b) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.OptionGet">
+            <summary>设置 DiscriminatedUnion`2.get_Option() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.ToString">
+            <summary>设置 DiscriminatedUnion`2.ToString() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.AllInstances.AGet">
+            <summary>设置 DiscriminatedUnion`2.get_A() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.AllInstances.BGet">
+            <summary>设置 DiscriminatedUnion`2.get_B() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.AllInstances.OptionGet">
+            <summary>设置 DiscriminatedUnion`2.get_Option() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimDiscriminatedUnion`2.AllInstances.ToString01">
+            <summary>设置 DiscriminatedUnion`2.ToString() 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Utility.Fakes.ShimModbusUtility">
+            <summary>Modbus.Utility.ModbusUtility 的填充码类型</summary>
+        </member>
+        <member name="M:Modbus.Utility.Fakes.ShimModbusUtility.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Modbus.Utility.Fakes.ShimModbusUtility.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Modbus.Utility.Fakes.ShimModbusUtility.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility.CalculateCrcByteArray">
+            <summary>设置 ModbusUtility.CalculateCrc(Byte[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility.CalculateLrcByteArray">
+            <summary>设置 ModbusUtility.CalculateLrc(Byte[] data) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility.GetAsciiBytesByteArray">
+            <summary>设置 ModbusUtility.GetAsciiBytes(Byte[] numbers) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility.GetAsciiBytesUInt16Array">
+            <summary>设置 ModbusUtility.GetAsciiBytes(UInt16[] numbers) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility.GetSingleUInt16UInt16">
+            <summary>设置 ModbusUtility.GetSingle(UInt16 highOrderValue, UInt16 lowOrderValue) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility.GetUInt32UInt16UInt16">
+            <summary>设置 ModbusUtility.GetUInt32(UInt16 highOrderValue, UInt16 lowOrderValue) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility.HexToBytesString">
+            <summary>设置 ModbusUtility.HexToBytes(String hex) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility.NetworkBytesToHostUInt16ByteArray">
+            <summary>设置 ModbusUtility.NetworkBytesToHostUInt16(Byte[] networkBytes) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility.StaticConstructor">
+            <summary>设置 ModbusUtility.ModbusUtility() 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility._GetAsciiBytesb__0Byte">
+            <summary>设置 ModbusUtility.&lt;GetAsciiBytes&gt;b__0(Byte n) 的 填充码</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.ShimModbusUtility._GetAsciiBytesb__2UInt16">
+            <summary>设置 ModbusUtility.&lt;GetAsciiBytes&gt;b__2(UInt16 n) 的 填充码</summary>
+        </member>
+        <member name="T:Modbus.Utility.Fakes.StubDiscriminatedUnion`2">
+            <summary>Modbus.Utility.DiscriminatedUnion`2 的存根类型</summary>
+        </member>
+        <member name="M:Modbus.Utility.Fakes.StubDiscriminatedUnion`2.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Modbus.Utility.Fakes.StubDiscriminatedUnion`2.InitializeStub">
+            <summary>初始化 type StubDiscriminatedUnion 的新实例</summary>
+        </member>
+        <member name="M:Modbus.Utility.Fakes.StubDiscriminatedUnion`2.ToString">
+            <summary>设置 DiscriminatedUnion`2.ToString() 的 存根</summary>
+        </member>
+        <member name="F:Modbus.Utility.Fakes.StubDiscriminatedUnion`2.ToString01">
+            <summary>设置 DiscriminatedUnion`2.ToString() 的 stub</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.StubDiscriminatedUnion`2.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.StubDiscriminatedUnion`2.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:Modbus.Utility.Fakes.StubDiscriminatedUnion`2.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+    </members>
+</doc>
