@@ -1,0 +1,79 @@
+{
+"Branch1": {
+  "name": "支路1",
+  "breaker": {
+    "addr":7
+  },
+  "meter": {
+    "type": "EPM5500",
+    "addr": 1
+  },
+  "voltThreshold": 250,
+  "elecThreshold":3.15,
+  "activePowerThreshold": 3.16
+},
+"Branch2": {
+  "name": "支路2",
+  "breaker": {
+    "addr":8
+  },
+  "meter": {
+    "type": "EPM5500",
+    "addr": 2
+  },
+  "voltThreshold": 250,
+  "elecThreshold":3.15,
+  "activePowerThreshold": 3.16},
+"Branch3": {
+  "name": "支路3",
+  "breaker": {
+    "addr":9
+  },
+  "meter": {
+    "type": "PM800",
+    "addr": 3
+  },
+  "voltThreshold": 250000,
+  "elecThreshold":250000,
+  "activePowerThreshold": 250000
+},
+"Branch4": {
+  "name": "支路4",
+  "breaker": {
+    "addr":10
+  },
+  "meter": {
+    "type": "PM800",
+    "addr": 4
+  },
+  "voltThreshold": 250000,
+  "elecThreshold":250000,
+  "activePowerThreshold": 250000
+},
+"Branch5": {
+  "name": "支路5",
+  "breaker": {
+    "addr":11
+  },
+  "meter": {
+    "type": "PAC4200",
+    "addr": 5
+  },
+  "voltThreshold": 250000,
+  "elecThreshold":250000,
+  "activePowerThreshold":250000
+},
+  "Branch6": {
+    "name": "支路6",
+    "breaker": {
+      "addr":12
+    },
+    "meter": {
+      "type": "PAC4200",
+      "addr": 6
+    },
+    "voltThreshold": 250000,
+    "elecThreshold":250000,
+    "activePowerThreshold": 250000
+}
+}
