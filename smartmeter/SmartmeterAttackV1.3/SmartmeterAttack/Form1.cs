@@ -28,12 +28,79 @@ namespace SmartmeterAttack
         public TCPSGInterface TcpMeter2;
         public TCPSGInterface TcpMeter3;
         bool bIsOpen = false;
+        private System.Windows.Forms.Timer timer;
+        private Random random=new Random();
+        private Size _originalFormSize;
+        private List<ControlEntity> _originalControlList = new List<ControlEntity>();
+
         public Form1()
         {
             InitializeComponent();
+            timer = new System.Windows.Forms.Timer();
+            timer.Interval = 500; // 设置定时器间隔为0.5秒
+            timer.Tick += Timer_Tick;
+            timer.Start();
+            this.Resize += new System.EventHandler(this.Form1_Resize);
+            this.Load += new System.EventHandler(this.Form1_Load);
         }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            float randomNumber = (float)(random.NextDouble()*100);
+            if(!bIsOpen)
+            {
+                v_1.Text = randomNumber.ToString("0.00");
+            }
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            _originalFormSize = this.Size; // 记录窗口的原始大小
 
-        
+            // 遍历窗口中的所有控件，记录它们的原始大小和位置
+            foreach (Control control in this.Controls)
+            {
+                _originalControlList.Add(new ControlEntity()
+                {
+                    Size = control.Size,
+                    Location = control.Location,
+                    FontSize = control.Font.Size,
+                    Name = control.Name
+                });
+            }
+
+            // 设置窗体的自动缩放模式为字体
+            this.AutoScaleMode = AutoScaleMode.Font;
+        }
+        public class ControlEntity
+        {
+            public string Name { get; set; }
+            public Size Size { get; set; }
+            public Point Location { get; set; }
+            public float FontSize { get; set; }
+        }
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            float xRatio = (float)this.Width / _originalFormSize.Width;
+            float yRatio = (float)this.Height / _originalFormSize.Height;
+
+            foreach (Control control in this.Controls)
+            {
+                var originalControl = _originalControlList.Find(m => m.Name == control.Name);
+                if (originalControl == null) continue;
+
+                control.Location = new Point((int)(originalControl.Location.X * xRatio), (int)(originalControl.Location.Y * yRatio));
+
+                if (control is TextBox textBox || control is RichTextBox richTextBox)
+                {
+                    control.Size = new Size((int)(originalControl.Size.Width * xRatio), (int)(originalControl.Size.Height * yRatio));
+                    float fontSize = originalControl.FontSize * xRatio;
+                    control.Font = new Font(control.Font.FontFamily, fontSize, control.Font.Style);
+                }
+                else
+                {
+                    control.Size = new Size((int)(originalControl.Size.Width * xRatio), (int)(originalControl.Size.Height * yRatio));
+                }
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -317,10 +384,6 @@ namespace SmartmeterAttack
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void groupBox2_Enter(object sender, EventArgs e)
         {
@@ -373,6 +436,61 @@ namespace SmartmeterAttack
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox23_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void v_1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void p_2_TextChanged(object sender, EventArgs e)
         {
 
         }
