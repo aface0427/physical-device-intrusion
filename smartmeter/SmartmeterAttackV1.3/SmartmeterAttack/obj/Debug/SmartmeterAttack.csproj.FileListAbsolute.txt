@@ -48,3 +48,17 @@ D:\project2\smartmeter\smartmeter\SmartmeterAttackV1.2\SmartmeterAttack\obj\Debu
 D:\project2\smartmeter\smartmeter\SmartmeterAttackV1.2\SmartmeterAttack\obj\Debug\SmartmeterAttack.csproj.CopyComplete
 D:\project2\smartmeter\smartmeter\SmartmeterAttackV1.2\SmartmeterAttack\obj\Debug\SmartmeterAttack.exe
 D:\project2\smartmeter\smartmeter\SmartmeterAttackV1.2\SmartmeterAttack\obj\Debug\SmartmeterAttack.pdb
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\bin\Debug\smartmeter.ico
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\bin\Debug\SmartmeterAttack.exe.config
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\bin\Debug\SmartmeterAttack.exe
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\bin\Debug\SmartmeterAttack.pdb
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\bin\Debug\Modbus.dll
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\bin\Debug\Unme.Common.dll
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\obj\Debug\SmartmeterAttack.csproj.AssemblyReference.cache
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\obj\Debug\SmartmeterAttack.Form1.resources
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\obj\Debug\SmartmeterAttack.Properties.Resources.resources
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\obj\Debug\SmartmeterAttack.csproj.GenerateResource.cache
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\obj\Debug\SmartmeterAttack.csproj.CoreCompileInputs.cache
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\obj\Debug\SmartmeterAttack.csproj.CopyComplete
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\obj\Debug\SmartmeterAttack.exe
+D:\project2\smartmeter\SmartmeterAttackV1.3\SmartmeterAttack\obj\Debug\SmartmeterAttack.pdb
