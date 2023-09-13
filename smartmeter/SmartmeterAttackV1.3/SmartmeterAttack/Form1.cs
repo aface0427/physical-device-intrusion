@@ -28,8 +28,6 @@ namespace SmartmeterAttack
         bool bIsOpen = false;
         private System.Windows.Forms.Timer timer;
         private Random random=new Random();
-        private Size _originalFormSize;
-        private List<ControlEntity> _originalControlList = new List<ControlEntity>();
         private byte[] res=new byte[20];
         public Form1()
         {
@@ -38,8 +36,57 @@ namespace SmartmeterAttack
             timer.Interval = 500; // 设置定时器间隔为0.5秒
             timer.Tick += Timer_Tick;
             timer.Start();
-            this.Resize += new System.EventHandler(this.Form1_Resize);
-            this.Load += new System.EventHandler(this.Form1_Load);
+            x = Width;
+            y = Height;
+            setTag(this);
+        }
+        private readonly float x; //定义当前窗体的宽度
+        private readonly float y; //定义当前窗体的高度
+
+        private void setTag(Control cons)
+        {
+            foreach (Control con in cons.Controls)
+            {
+                con.Tag = con.Width + ";" + con.Height + ";" + con.Left + ";" + con.Top + ";" + con.Font.Size;
+                if (con.Controls.Count > 0) setTag(con);
+            }
+        }
+
+        private void setControls(float newx, float newy, Control cons)
+        {
+            //遍历窗体中的控件，重新设置控件的值
+            foreach (Control con in cons.Controls)
+                //获取控件的Tag属性值，并分割后存储字符串数组
+                if (con.Tag != null)
+                {
+                    var mytag = con.Tag.ToString().Split(';');
+                    //根据窗体缩放的比例确定控件的值
+                    con.Width = Convert.ToInt32(Convert.ToSingle(mytag[0]) * newx); //宽度
+                    con.Height = Convert.ToInt32(Convert.ToSingle(mytag[1]) * newy); //高度
+                    con.Left = Convert.ToInt32(Convert.ToSingle(mytag[2]) * newx); //左边距
+                    con.Top = Convert.ToInt32(Convert.ToSingle(mytag[3]) * newy); //顶边距
+                    var currentSize = Convert.ToSingle(mytag[4]) * newy; //字体大小                   
+                    if (currentSize > 0) con.Font = new Font(con.Font.Name, currentSize, con.Font.Style, con.Font.Unit);
+                    con.Focus();
+                    if (con.Controls.Count > 0) setControls(newx, newy, con);
+
+                }
+        }
+
+        /// <summary>
+        /// 重置窗体布局
+        /// </summary>
+        private void ReWinformLayout()
+        {
+            var newx = Width / x;
+            var newy = Height / y;
+            setControls(newx, newy, this);
+
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            ReWinformLayout();
         }
         unsafe private void Timer_Tick(object sender, EventArgs e)
         {
@@ -122,54 +169,9 @@ namespace SmartmeterAttack
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            _originalFormSize = this.Size; // 记录窗口的原始大小
-
-            // 遍历窗口中的所有控件，记录它们的原始大小和位置
-            foreach (Control control in this.Controls)
-            {
-                _originalControlList.Add(new ControlEntity()
-                {
-                    Size = control.Size,
-                    Location = control.Location,
-                    FontSize = control.Font.Size,
-                    Name = control.Name
-                });
-            }
-
-            // 设置窗体的自动缩放模式为字体
-            this.AutoScaleMode = AutoScaleMode.Font;
+            
         }
-        public class ControlEntity
-        {
-            public string Name { get; set; }
-            public Size Size { get; set; }
-            public Point Location { get; set; }
-            public float FontSize { get; set; }
-        }
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-            float xRatio = (float)this.Width / _originalFormSize.Width;
-            float yRatio = (float)this.Height / _originalFormSize.Height;
-
-            foreach (Control control in this.Controls)
-            {
-                var originalControl = _originalControlList.Find(m => m.Name == control.Name);
-                if (originalControl == null) continue;
-
-                control.Location = new Point((int)(originalControl.Location.X * xRatio), (int)(originalControl.Location.Y * yRatio));
-
-                if (control is TextBox textBox || control is RichTextBox richTextBox)
-                {
-                    control.Size = new Size((int)(originalControl.Size.Width * xRatio), (int)(originalControl.Size.Height * yRatio));
-                    float fontSize = originalControl.FontSize * xRatio;
-                    control.Font = new Font(control.Font.FontFamily, fontSize, control.Font.Style);
-                }
-                else
-                {
-                    control.Size = new Size((int)(originalControl.Size.Width * xRatio), (int)(originalControl.Size.Height * yRatio));
-                }
-            }
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -179,13 +181,6 @@ namespace SmartmeterAttack
                 {
                     TcpMeter1 = new TCPSGInterface("192.168.1.254");
                     bIsOpen = true;
-                    button2.Enabled = true;
-                    button3.Enabled = true;
-                    button4.Enabled = true;
-                    button5.Enabled = true;
-                    button6.Enabled = true;
-                    button7.Enabled = true;
-                    button8.Enabled = true;
 
                 }
                 catch (Exception ex)
@@ -199,13 +194,6 @@ namespace SmartmeterAttack
                 {
                     TcpMeter1.close();
                     bIsOpen = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
 
                 }
                 catch (Exception ex)
@@ -538,6 +526,26 @@ namespace SmartmeterAttack
         }
 
         private void p_2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox14_TextChanged(object sender, EventArgs e)
         {
 
         }
