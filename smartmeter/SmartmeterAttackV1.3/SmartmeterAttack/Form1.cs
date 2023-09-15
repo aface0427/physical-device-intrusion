@@ -29,6 +29,7 @@ namespace SmartmeterAttack
         private System.Windows.Forms.Timer timer;
         private Random random=new Random();
         private byte[] res=new byte[20];
+        private int pt1=100,pt2=100,ct=5;
         public Form1()
         {
             InitializeComponent();
@@ -95,7 +96,7 @@ namespace SmartmeterAttack
             if (bIsOpen)
             {
                 TcpMeter1.ReadHoldingRegisters(0x01, 0x0131, 0x0001, res);
-                vv = ((res[0] << 8) + res[1]) / (float)10.0;
+                vv = ((res[0] << 8) + res[1])*pt1/pt2 / (float)10.0;
                 v_1.Text = vv.ToString("0.00");
                 TcpMeter1.ReadHoldingRegisters(0x01, 0x0139, 0x0001, res);
                 cc = ((res[0] << 8) + res[1]) / (float)1000.0;
