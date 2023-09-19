@@ -32,6 +32,11 @@ public class ReadMeterValueController {
 
         return HttpResult.FAILURE();
     }
+    @RequestMapping(value="testButton.do",method= RequestMethod.GET)
+    @ResponseBody
+    public HttpResult testButton(String ipAddr,Integer port){
+        return HttpResult.SUCCESS();
+    }
     @RequestMapping(value="connectClose.do",method= RequestMethod.GET)
     @ResponseBody
     public HttpResult closeConnection() throws IOException {

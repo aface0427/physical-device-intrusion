@@ -22,6 +22,14 @@
 	margin-top: 10px;
 }
 
+#fusionview .btn{
+	position: absolute;
+	width:100px;
+	height: 50px;
+	right:40px;
+	top:50px;
+	/*border: 1px solid #111;*/
+}
 #fusionview .subview1 ,#fusionview .subview2, #fusionview .subview3{
 	position: absolute;
 	width:150px;
@@ -65,7 +73,6 @@
 	left:10px;
 	bottom:10px;
 }
-
 #fusionview .subview3{
 	right:10px;
 	top:100px;

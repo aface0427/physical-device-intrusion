@@ -25,8 +25,9 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	</script>
     <![endif]-->
   </head>
 
@@ -53,6 +54,7 @@
 
 		<div id="fusionview" class="panel panel-primary">
 			<div class="panel-heading">攻击检测预警</div>
+			<button id="myButton" class="btn btn-primary">按钮1</button>
 			<div class="subview1 panel panel-success">
 				<div class="panel-heading">物理系统</div>
 				<div class="panel-body">
@@ -189,7 +191,31 @@
             CopyRight 2014-2015 &copy;<b style="color:#333;">Smart Grid Team</b> All Rights Reserved
           </p>
     </footer>
+    
+    <script>
+	    const button = document.getElementById("myButton");
 
+	    button.addEventListener("click", () => {
+		    fetch("/api/backweb/testButton.do")
+			    .then(response => response.json())
+			    .then(data => {
+				    const button = document.getElementById("myButton");
+				    if (data.resultCode === 200&&button.textContent === "按钮1") {
+					    button.classList.remove("btn-warning");
+					    button.classList.add("btn-success");
+					    button.textContent = "按钮2";
+				    }
+					else if (data.resultCode === 200&&button.textContent === "按钮2") {
+					    button.classList.remove("btn-success");
+					    button.classList.add("btn-warning");
+					    button.textContent = "按钮1";
+				    }
+			    })
+			    .catch(error => {
+				    console.log(error);
+			    });
+	    });
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
