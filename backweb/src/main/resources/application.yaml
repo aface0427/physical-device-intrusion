@@ -1,0 +1,7 @@
+#数据源连接信息
+spring:
+  datasource:
+    username: root
+    password: 513420ao427AO
+    url: jdbc:mysql://127.0.0.1:3306/cabinets?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver

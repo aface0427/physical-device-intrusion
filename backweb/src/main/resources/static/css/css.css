@@ -1,39 +1,45 @@
 .container{
-	width: 950px;
+	width: 976px;
 }
 
 #topograph{
 	position: relative;
 	background: url(../img/topograph.png) no-repeat 0px 0px;
 	width:100%;
-	height: 564px;
+	height:750px;
 	/*margin-top: 20px;*/
 }
 
 #fusionview{
 	position: relative;
-	width:400px;
-	height: 260px;
+	width:950px;
+	height: 150px;
 	border: 1px solid #428bca;
 	border-radius: 4px;
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
 	box-shadow: 0 1px 1px rgba(0,0,0,.05);
-	background-color: #dff0d8;	
+	background-color: #ffffff;
 	margin-top: 10px;
 }
 
-#fusionview .btn{
+#topograph .btn{
 	position: absolute;
-	width:100px;
+	width:950px;
 	height: 50px;
-	right:40px;
-	top:50px;
+	right:0px;
+	top:0px;
 	/*border: 1px solid #111;*/
 }
 #fusionview .subview1 ,#fusionview .subview2, #fusionview .subview3{
 	position: absolute;
 	width:150px;
 	height: 80px;
+	/*border: 1px solid #111;*/
+}
+#fusionview .subview4 ,#fusionview .subview5{
+	position: absolute;
+	width:150px;
+	height: 40px;
 	/*border: 1px solid #111;*/
 }
 
@@ -66,32 +72,54 @@
 
 #fusionview .subview1{
 	left:10px;
-	top:50px;
+	bottom:10px;
 }
 
 #fusionview .subview2{
-	left:10px;
+	right:10px;
 	bottom:10px;
 }
 #fusionview .subview3{
-	right:10px;
-	top:100px;
+	left:400px;
+	bottom:10px;
 }
 
 #fusionview .panel{
 	margin-bottom: 10px;
 }
-
-#fusionview .arrow{
+#fusionview .arrow1{
 	position: absolute;
-	width:80px;
+	width:220px;
 	height:150px;
-	left:160px;
-	top: 80px;
-	background: url(../img/arrow.png) center center no-repeat;
+	right:560px;
+	top: 30px;
+	z-index:3;
+	background: url(../img/arrow1.png) center center no-repeat;
+
+}
+#fusionview .arrow2{
+	position: absolute;
+	width:220px;
+	height:150px;
+	left:560px;
+	top: 30px;
+	z-index:2;
+	background: url(../img/arrow2.png) center center no-repeat;
 
 }
 
+#fusionview .subview4{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) translate(-190px, 5px);
+	z-index:4;
+}
+#fusionview .subview5{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) translate(220px, 5px);
+	z-index:5;
+}
 #fusionview .panel-heading{
 	padding: 5px 10px;
 }
@@ -100,27 +128,36 @@
 	padding: 10px;
 }
 
-#sw, #sw_1, #sw_2{
+#sw_1, #sw_2, #sw_3,#sw_4,#sw_5,#sw_6{
 	position: absolute;
 	width:23px;
 	height: 61px;
 }
 
-#sw{
-	left:451px;
-	top:109px;
-}
-
 #sw_1{
-	left: 38px;
-	top:  320px;
+	left: 792px;
+	top: 207px;
 }
-
 #sw_2{
-	left: 497px;
-	top:  319px;
+	left: 647px;
+	top:  207px;
 }
-
+#sw_3{
+	left: 502px;
+	top:  207px;
+}
+#sw_4{
+	left: 359px;
+	top:  207px;
+}
+#sw_5{
+	left: 212px;
+	top:  207px;
+}
+#sw_6{
+	left: 68px;
+	top:  207px;
+}
 .sw_on{
 	background: url(../img/sw_on.png) no-repeat center right;
 }
@@ -131,27 +168,38 @@
 
 .datablock{
 	position: absolute;
-	width: 200px;
+	width: 120px;
 	height: 200px;
 }
 
 .datablock .list-group-item{
 	padding: 5px 15px;
 }
-#meter1{
-	right: 50px;
-	top: 0;
+#meter6{
+	right: 800px;
+	top: 495px;
 }
 
-#meter2{
-	left: 200px;
-	top: 284px;
+#meter5{
+	right: 655px;
+	top: 495px;
 }
 
-
+#meter4{
+	right:510px;
+	top: 495px;
+}
 #meter3{
-	right: 50px;
-	top: 284px;
+	right:365px;
+	top: 495px;
+}
+#meter2{
+	right:220px;
+	top: 495px;
+}
+#meter1{
+	right:75px;
+	top: 495px;
 }
 
 .datablock .list-group{
@@ -269,7 +317,7 @@
 }
 
 .multi-tables.table-striped>tbody>tr:nth-child(odd)>td,.multi-tables.table-striped>tbody>tr:nth-child(odd)>th {
-background-color: #c9f9c9;
+background-color: #ffffff;
 }
 
 .footer {

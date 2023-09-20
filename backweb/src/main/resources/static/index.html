@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-
     <title>基于物理-信息异常融合的智能电网攻击检测系统</title>
 
     <!-- Bootstrap core CSS -->
@@ -48,136 +47,224 @@
         </ul>
       </div>
       <!-- 导航结束 -->
-	  
-	  <div id="topograph">
+	  <div id="checkbar">
+		  <div class="panel panel-primary" id="fusionview">
 
-
-		<div id="fusionview" class="panel panel-primary">
-			<div class="panel-heading">攻击检测预警</div>
-			<button id="myButton" class="btn btn-primary">按钮1</button>
-			<div class="subview1 panel panel-success">
-				<div class="panel-heading">物理系统</div>
-				<div class="panel-body">
-					<span class="glyphicon glyphicon-ok-sign"></span>
-					<!-- <span class="glyphicon glyphicon-remove-sign"></span> -->
-					<!-- <span class="glyphicon glyphicon-info-sign"></span> -->
-				</div>
-			</div>
-
-			<div class="subview2 panel panel-info">
-				<div class="panel-heading">信息系统</div>
-				<div class="panel-body">
-					<!-- <span class="glyphicon glyphicon-ok-sign"></span> -->
-					<span class="glyphicon glyphicon-remove-sign"></span>
-					<!-- <span class="glyphicon glyphicon-info-sign"></span> -->
-				</div>
-			</div>
-			<div class="subview3 panel panel-warning">
-				<div class="panel-heading">融合检测</div>
-				<div class="panel-body">
-					<!-- <span class="glyphicon glyphicon-ok-sign"></span> -->
-					<!-- <span class="glyphicon glyphicon-remove-sign"></span> -->
-					<span class="glyphicon glyphicon-info-sign"></span>
-				</div>
-			</div>
-
-			<div class="arrow">
-				
-			</div>
-
-		</div>
-			
-
-	  	<!-- 开关显示 -->
-	  	<div id="sw" class="sw_on"></div>
-	  	<div id="sw_1" class="sw_on"></div>
-	  	<div id="sw_2" class="sw_off"></div>
-
-		<div class="datablock" id="meter1">
-
-			<div class="panel panel-primary">
-			  <div class="panel-heading">总路表计-物理系统状态</div>
-			  <div class="panel-body">
-			    <ul class="list-group">
-			    	<li  class="list-group-item">U= 225.00 V</li>
-			    	<li class="list-group-item">I=   2.00 A</li>
-			    	<li class="list-group-item">P= 450.00 W</li>
-			    	<li class="list-group-item">Q= -20.00 W</li>
-			    </ul>
+			  <div class="panel-heading">攻击检测预警</div>
+			  <div class="subview4 panel panel-light">
+				  <div class="panel-body">
+					  <div>未检测到异常</div>
+					  <!-- <span class="glyphicon glyphicon-remove-sign"></span> -->
+					  <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
+				  </div>
 			  </div>
+			  <div class="subview5 panel panel-light">
+				  <div class="panel-body">
+					  <div>未检测到异常</div>
+					  <!-- <span class="glyphicon glyphicon-remove-sign"></span> -->
+					  <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
+				  </div>
+			  </div>
+			  <div class="subview1 panel panel-success">
+				  <div class="panel-heading">物理系统</div>
+				  <div class="panel-body">
+					  <span class="glyphicon glyphicon-question-sign"></span>
+					  <!-- <span class="glyphicon glyphicon-remove-sign"></span> -->
+					  <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
+				  </div>
+			  </div>
+			  <div class="arrow1">
+			  </div>
+			  <div class="subview2 panel panel-info">
+				  <div class="panel-heading">信息系统</div>
+				  <div class="panel-body">
+					  <!-- <span class="glyphicon glyphicon-ok-sign"></span> -->
+					  <span class="glyphicon glyphicon-question-sign"></span>
+					  <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
+				  </div>
+			  </div>
+			  <div class="subview3 panel panel-warning">
+				  <div class="panel-heading">融合检测</div>
+				  <div class="panel-body">
+					  <!-- <span class="glyphicon glyphicon-ok-sign"></span> -->
+					  <!-- <span class="glyphicon glyphicon-remove-sign"></span> -->
+					  <span class="glyphicon glyphicon-question-sign"></span>
+				  </div>
+			  </div>
+			  <div class="arrow2">
+			  </div>
+		  </div>
+	  </div>
+		<div id="topograph">
+			<button class="btn btn-light" id="myButton">电表未连接</button>
+
+			<!-- 开关显示 -->
+			<div class="sw_on" id="sw_1"></div>
+			<div class="sw_on" id="sw_2"></div>
+			<div class="sw_on" id="sw_3"></div>
+			<div class="sw_on" id="sw_4"></div>
+			<div class="sw_off" id="sw_5"></div>
+			<div class="sw_off" id="sw_6"></div>
+
+			<div class="datablock" id="meter6">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">电表数据6#</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item u6">U=nan</li>
+							<li class="list-group-item c6">I=nan</li>
+							<li class="list-group-item p6">P=nan</li>
+						</ul>
+					</div>
 			</div>
 
 			<div class="panel panel-info">
-  			  <div class="panel-heading">总路表计-信息系统状态</div>
+				<div class="panel-heading">网络地址</div>
 			  <div class="panel-body">
-			    <ul class="list-group">
-			    	<li class="list-group-item">IP: 192.168.1.106</li>
-			    	<li class="list-group-item list-group-item-success">信息网络状态：<span class="glyphicon glyphicon-warning-sign"></span></li>
-			    </ul>
+				  <ul class="list-group">
+					  <li class="list-group-item">Addr:0x06</li>
+					  <li class="list-group-item list-group-item-success">支路状态：<span
+							  class="glyphicon glyphicon-warning-sign"></span></li>
+				  </ul>
 			  </div>
 			</div>
 
 
 			</div><!--  /datablock -->
 
-		<div class="datablock" id="meter2">
+			<div class="datablock" id="meter5">
 
-			<div class="panel panel-primary">
-			  <div class="panel-heading">支路I表计-物理系统状态</div>
-			  <div class="panel-body">
-			    <ul class="list-group">
-			    	<li class="list-group-item">U= 225.00 V</li>
-			    	<li class="list-group-item">I=   2.00 A</li>
-			    	<li class="list-group-item">P= 450.00 W</li>
-			    	<li class="list-group-item">Q= -20.00 W</li>
-			    </ul>
-			  </div>
-			</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">电表数据5#</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item u5">U=nan</li>
+							<li class="list-group-item c5">I=nan</li>
+							<li class="list-group-item p5">P=nan</li>
+						</ul>
+					</div>
+				</div>
 
-			<div class="panel panel-info">
-  			  <div class="panel-heading">支路I表计-信息系统状态</div>
-			  <div class="panel-body">
-			    <ul class="list-group">
-			    	<li class="list-group-item">IP: 192.168.1.106</li>
-			    	<li class="list-group-item list-group-item-success">信息网络状态：<span class="glyphicon glyphicon-remove"></span></li>
-			    </ul>
-			  </div>
-			</div>
-
-
-			</div><!--  /datablock -->
-
-
-		<div class="datablock" id="meter3">
-
-			<div class="panel panel-primary">
-			  <div class="panel-heading">支路II表计-物理系统状态</div>
-			  <div class="panel-body">
-			    <ul class="list-group">
-			    	<li  class="list-group-item">U= 225.00 V</li>
-			    	<li class="list-group-item">I=   2.00 A</li>
-			    	<li class="list-group-item">P= 450.00 W</li>
-			    	<li class="list-group-item">Q= -20.00 W</li>
-			    </ul>
-			  </div>
-			</div>
-
-			<div class="panel panel-info">
-  			  <div class="panel-heading">支路II表计-信息系统状态</div>
-			  <div class="panel-body">
-			    <ul class="list-group">
-			    	<li class="list-group-item">IP: 192.168.1.106</li>
-			    	<li class="list-group-item  list-group-item-success">信息网络状态：<span class="glyphicon glyphicon-ok"></span></li>
-			    </ul>
-			  </div>
-			</div>
+				<div class="panel panel-info">
+					<div class="panel-heading">网络地址</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item">Addr:0x05</li>
+							<li class="list-group-item list-group-item-success">支路状态：<span
+									class="glyphicon glyphicon-remove"></span></li>
+						</ul>
+					</div>
+				</div>
 
 
 			</div><!--  /datablock -->
 
 
+			<div class="datablock" id="meter4">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">电表数据4#</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item u4">U=nan</li>
+							<li class="list-group-item c4">I=nan</li>
+							<li class="list-group-item p4">P=nan</li>
+						</ul>
+					</div>
+			</div>
+
+			<div class="panel panel-info">
+				<div class="panel-heading">网络地址</div>
+			  <div class="panel-body">
+				  <ul class="list-group">
+					  <li class="list-group-item">Addr:0x04</li>
+					  <li class="list-group-item  list-group-item-success">支路状态：<span
+							  class="glyphicon glyphicon-ok"></span></li>
+				  </ul>
+			  </div>
+			</div>
 
 
+			</div><!--  /datablock -->
+			<div class="datablock" id="meter3">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">电表数据3#</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item u3">U=nan</li>
+							<li class="list-group-item c3">I=nan</li>
+							<li class="list-group-item p3">P=nan</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="panel panel-info">
+					<div class="panel-heading">网络地址</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item">Addr:0x03</li>
+							<li class="list-group-item  list-group-item-success">支路状态：<span
+									class="glyphicon glyphicon-ok"></span></li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div><!--  /datablock -->
+			<div class="datablock" id="meter2">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">电表数据2#</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item u2">U=nan</li>
+							<li class="list-group-item c2">I=nan</li>
+							<li class="list-group-item p2">P=nan</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="panel panel-info">
+					<div class="panel-heading">网络地址</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item">Addr:0x02</li>
+							<li class="list-group-item  list-group-item-success">支路状态：<span
+									class="glyphicon glyphicon-ok"></span></li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div><!--  /datablock -->
+			<div class="datablock" id="meter1">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">电表数据1#</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item u1">U=nan</li>
+							<li class="list-group-item c1">I=nan</li>
+							<li class="list-group-item p1">P=nan</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="panel panel-info">
+					<div class="panel-heading">网络地址</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item">Addr:0x01</li>
+							<li class="list-group-item  list-group-item-success">支路状态：<span
+									class="glyphicon glyphicon-ok"></span></li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div><!--  /datablock -->
 
 
 		</div>
@@ -194,27 +281,142 @@
     
     <script>
 	    const button = document.getElementById("myButton");
-
 	    button.addEventListener("click", () => {
-		    fetch("/api/backweb/testButton.do")
-			    .then(response => response.json())
-			    .then(data => {
-				    const button = document.getElementById("myButton");
-				    if (data.resultCode === 200&&button.textContent === "按钮1") {
-					    button.classList.remove("btn-warning");
-					    button.classList.add("btn-success");
-					    button.textContent = "按钮2";
-				    }
-					else if (data.resultCode === 200&&button.textContent === "按钮2") {
-					    button.classList.remove("btn-success");
-					    button.classList.add("btn-warning");
-					    button.textContent = "按钮1";
-				    }
-			    })
-			    .catch(error => {
-				    console.log(error);
-			    });
+			if(button.textContent === "电表未连接")
+			{
+				fetch("/api/backweb/connectBuild.do?ipAddr=192.168.1.254&port=502")
+						.then(response => response.json())
+						.then(data => {
+							const button = document.getElementById("myButton");
+							if (data.resultCode === 200){
+								button.classList.remove("btn-light");
+								button.classList.add("btn-success");
+								button.textContent = "电表已连接";
+								makeRequests();
+							} else{
+								window.alert("连接失败");
+							}
+						})
+						.catch(error => {
+							console.log(error);
+						});
+			}
+			else if (button.textContent === "电表已连接") {
+				fetch("/api/backweb/connectClose.do")
+						.then(response => response.json())
+						.then(data => {
+							const button = document.getElementById("myButton");
+							if (data.resultCode === 200){
+								button.classList.remove("btn-success");
+								button.classList.add("btn-light");
+								button.textContent = "电表未连接";
+							} else{
+								window.alert("连接失败");
+							}
+						})
+						.catch(error => {
+							console.log(error);
+						});
+			}
+
 	    });
+
+		// 启动定时器
+		var timer = setInterval(checkButtonStatus, 3000); // 每隔 12 秒调用一次 checkButtonStatus 函数
+
+		// 检查按钮文本内容的函数
+		function checkButtonStatus() {
+			if (button.textContent === "电表已连接") {
+				makeRequests(); // 如果按钮文本为 "电表已连接"，执行请求操作
+			}
+		}
+
+		// 发送请求的函数
+		function makeRequests() {
+			// 定义计数器和最大请求次数
+			var counter = 0;
+			var maxRequests = 6;
+
+			// 定义参数的起始值
+			var startId = 1;
+
+			// 发送请求的逻辑
+			function sendRequest() {
+				if (counter >= maxRequests) {
+					clearInterval(requestTimer); // 达到最大请求次数后停止定时器
+					return;
+				}
+
+				var id = startId + counter;
+
+				fetch(`/api/backweb/readMeterValue.do?id=${id}`)
+						.then(response => response.json())
+						.then(data => {
+							if(data.data.id==1)
+							{
+								var element = document.querySelector('.list-group-item.u1');
+								element.textContent = 'U='+data.data.voltageValue+'V';
+								element = document.querySelector('.list-group-item.c1');
+								element.textContent = 'I='+data.data.currentValue+'A';
+								element = document.querySelector('.list-group-item.p1');
+								element.textContent = 'P='+data.data.powerValue+'W';
+							}
+							else if(data.data.id==2)
+							{
+								var element = document.querySelector('.list-group-item.u2');
+								element.textContent = 'U='+data.data.voltageValue+'V';
+								element = document.querySelector('.list-group-item.c2');
+								element.textContent = 'I='+data.data.currentValue+'A';
+								element = document.querySelector('.list-group-item.p2');
+								element.textContent = 'P='+data.data.powerValue+'W';
+							}
+							else if(data.data.id==3)
+							{
+								var element = document.querySelector('.list-group-item.u3');
+								element.textContent = 'U='+data.data.voltageValue+'V';
+								element = document.querySelector('.list-group-item.c3');
+								element.textContent = 'I='+data.data.currentValue+'A';
+								element = document.querySelector('.list-group-item.p3');
+								element.textContent = 'P='+data.data.powerValue+'W';
+							}
+							else if(data.data.id==4)
+							{
+								var element = document.querySelector('.list-group-item.u4');
+								element.textContent = 'U='+data.data.voltageValue+'V';
+								element = document.querySelector('.list-group-item.c4');
+								element.textContent = 'I='+data.data.currentValue+'A';
+								element = document.querySelector('.list-group-item.p4');
+								element.textContent = 'P='+data.data.powerValue+'W';
+							}
+							else if(data.data.id==5)
+							{
+								var element = document.querySelector('.list-group-item.u5');
+								element.textContent = 'U='+data.data.voltageValue+'V';
+								element = document.querySelector('.list-group-item.c5');
+								element.textContent = 'I='+data.data.currentValue+'A';
+								element = document.querySelector('.list-group-item.p5');
+								element.textContent = 'P='+data.data.powerValue+'W';
+							}
+							else if(data.data.id==6)
+							{
+								var element = document.querySelector('.list-group-item.u6');
+								element.textContent = 'U='+data.data.voltageValue+'V';
+								element = document.querySelector('.list-group-item.c6');
+								element.textContent = 'I='+data.data.currentValue+'A';
+								element = document.querySelector('.list-group-item.p6');
+								element.textContent = 'P='+data.data.powerValue+'W';
+							}
+						})
+						.catch(error => {
+							console.log(error);
+						});
+
+				counter++;
+			}
+
+			// 每隔一段时间发送请求的定时器
+			var requestTimer = setInterval(sendRequest, 500); // 每隔 1 秒发送一次请求
+		}
     </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
