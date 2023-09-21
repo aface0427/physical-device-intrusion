@@ -44,6 +44,17 @@ public class ReadMeterValueController {
 
         return HttpResult.FAILURE();
     }
+    @RequestMapping(value="getStatus.do",method= RequestMethod.GET)
+    @ResponseBody
+    public HttpResult getConnectionStatus() throws IOException {
+            if(isConnected==true&&socket.isConnected())
+                return HttpResult.SUCCESS();
+            else
+            {
+                isConnected=false;
+                return HttpResult.FAILURE();
+            }
+    }
     @RequestMapping(value="testButton.do",method= RequestMethod.GET)
     @ResponseBody
     public HttpResult testButton(String ipAddr,Integer port){

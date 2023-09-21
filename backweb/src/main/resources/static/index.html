@@ -18,7 +18,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
-
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 
@@ -417,6 +417,26 @@
 			// 每隔一段时间发送请求的定时器
 			var requestTimer = setInterval(sendRequest, 500); // 每隔 1 秒发送一次请求
 		}
+	    $(document).ready(function() {
+		    const button = document.getElementById("myButton");
+			console.log("ok");
+		    fetch("/api/backweb/getStatus.do")
+			    .then(response => response.json())
+			    .then(data => {
+				    const button = document.getElementById("myButton");
+				    if (data.resultCode === 200){
+					    button.classList.remove("btn-light");
+					    button.classList.add("btn-success");
+					    button.textContent = "电表已连接";
+					    makeRequests();
+				    } else{
+					   
+				    }
+			    })
+			    .catch(error => {
+				    console.log(error);
+			    });
+	    });
     </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
