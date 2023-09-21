@@ -6,6 +6,7 @@ import com.xjtu.backweb.entity.MeterData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
@@ -98,6 +99,13 @@ public class ReadMeterValueController {
         else {
             return HttpResult.SUCCESS(meterDataDao.findLastSixRecordById());
         }
+    }
+    @Async
+    @Scheduled(fixedRate = 1500)
+    public void readwork() throws IOException, InterruptedException {
+        for(int i=1;i<=6;i++)
+            readMeterDataByTicks();
+            Thread.sleep(100);
     }
 
 
@@ -228,7 +236,6 @@ public class ReadMeterValueController {
 //        }
 //        return HttpResult.FAILURE();
 //    }
-    @Scheduled(fixedRate = 1000)
     public void readMeterDataByTicks() throws IOException {
         MeterData meterData=new MeterData();
         try{

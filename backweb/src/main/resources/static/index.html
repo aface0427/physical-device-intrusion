@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>基于物理-信息异常融合的智能电网攻击检测系统</title>
+    <title>基于信息-物理融合的新型电力系统攻击检测系统</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 
 	  <!-- 导航开始 -->
       <div class="masthead">
-        <h3 class="text-muted">基于物理信息-异常融合的智能电网攻击检测系统</h3>
+        <h3 class="text-muted">基于信息-物理融合的新型电力系统攻击检测系统</h3>
         <ul class="nav nav-justified ">
           <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>主页</a></li>
           <li><a href="realtime.html"><span class="glyphicon glyphicon-random"></span>实时曲线</a></li>
@@ -275,7 +275,7 @@
     </div> <!-- /container -->
     <footer class="footer ">
           <p>
-            CopyRight 2014-2015 &copy;<b style="color:#333;">Smart Grid Team</b> All Rights Reserved
+            CopyRight 2023-2024 &copy;<b style="color:#333;">Smart Grid Team</b> All Rights Reserved
           </p>
     </footer>
     
@@ -346,7 +346,7 @@
 	    });
 
 		// 启动定时器
-		var timer = setInterval(checkButtonStatus, 3000); // 每隔 12 秒调用一次 checkButtonStatus 函数
+		var timer = setInterval(checkButtonStatus, 1500); // 每隔 12 秒调用一次 checkButtonStatus 函数
 
 		// 检查按钮文本内容的函数
 		function checkButtonStatus() {
@@ -539,9 +539,8 @@
 
 				counter++;
 			}
-
 			// 每隔一段时间发送请求的定时器
-			var requestTimer = setInterval(sendRequest, 500); // 每隔 1 秒发送一次请求
+			var requestTimer = setInterval(sendRequest, 250); // 每隔 1 秒发送一次请求
 		}
 	    $(document).ready(function() {
 		    const button = document.getElementById("myButton");

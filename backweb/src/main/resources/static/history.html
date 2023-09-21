@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>基于物理-信息异常融合的智能电网攻击检测系统</title>
+    <title>基于信息-物理融合的新型电力系统攻击检测系统</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@
 
     <!-- 导航开始 -->
       <div class="masthead">
-        <h3 class="text-muted">基于物理信息-异常融合的智能电网攻击检测系统</h3>
+        <h3 class="text-muted">基于信息-物理融合的新型电力系统攻击检测系统</h3>
         <ul class="nav nav-justified ">
           <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>主页</a></li>
           <li><a href="realtime.html"><span class="glyphicon glyphicon-random"></span>实时曲线</a></li>
@@ -103,7 +103,7 @@
 
     <footer class="footer ">
           <p>
-            CopyRight 2014-2015 &copy;<b style="color:#333;">Smart Grid Team</b> All Rights Reserved
+            CopyRight 2023-2024 &copy;<b style="color:#333;">Smart Grid Team</b> All Rights Reserved
           </p>
     </footer>
 
@@ -144,185 +144,357 @@
             var chart1,chart2;
 
             //绘制三表功率曲线图
-            chart1 = new Highcharts.Chart({
-                chart: {
-                    renderTo: 'powergraph_search',//装载容器id
-                    type: 'spline',
-                    animation: Highcharts.svg, // don't animate in old IE
-                    marginRight: 10,
-                    events: {
-                        load: function() {
-        
-                            // set up the updating of the chart each second
-                            // var series = this.series[0];
-                            // var series2= this.series[1];
-                            // var series3= this.series[2];
-                            // setInterval(function() {
-                            //     var x = (new Date()).getTime(), // current time
-                            //         y = Math.random(),
-                            //         y2= Math.random(),
-                            //         y3= Math.random();
-                            //     series.addPoint([x, y], false, true);
-                            //     series2.addPoint([x, y2], false, true);
-                            //     series3.addPoint([x, y3], true, true);
-                            // }, 1000);
+          chart1 = new Highcharts.Chart({
+            chart: {
+              renderTo: 'powergraph_search',//装载容器id
+              type: 'spline',
+              animation: Highcharts.svg, // don't animate in old IE
+              marginRight: 10,
+              events: {
+                load: function() {
 
-                        }
-                    }
-                },
-                title: {
-                    text: '历史功率曲线'
-                },
-                xAxis: {
-                    type: 'datetime',
-                    tickPixelInterval: 150
-                },
-                yAxis: {
-                    title: {
-                        text: '有功功率（W）'
-                    },
-                    plotLines: [{
-                        value: 0,
-                        width: 1,
-                        color: '#808080'
-                    }]
-                },
-                tooltip: {
-                    formatter: function() {
-                            return '<b>'+ this.series.name +'</b><br/>'+
-                            Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) +'<br/>'+
-                            Highcharts.numberFormat(this.y, 2);
-                    }
-                },
-                legend: {
-                    enabled: true
-                },
-                exporting: {
-                    enabled: true
-                },
-                series: [{
-                    name: '总路计量',
-                    data: (function() {
-                        // generate an array of random data
-                        var data = [],
-                            time = (new Date()).getTime(),
-                            i;
-        
-                        for (i = -19; i <= 0; i++) {
-                            data.push({
-                                x: time + i * 1000,
-                                y: Math.random()
-                            });
-                        }
-                        return data;
-                    })()
-                },
-                {
-                    name: '支路I计量',
-                    data: (function() {
-                        // generate an array of random data
-                        var data1 = [],
-                            time1 = (new Date()).getTime(),
-                            i;
-        
-                        for (i = -19; i <= 0; i++) {
-                            data1.push({
-                                x: time1 + i * 1000,
-                                y: Math.random()
-                            });
-                        }
-                        return data1;
-                    })()
-                },
-                {
-                    name: '支路II计量',
-                    data: (function() {
-                        // generate an array of random data
-                        var data2 = [],
-                            time2 = (new Date()).getTime(),
-                            i;
-        
-                        for (i = -19; i <= 0; i++) {
-                            data2.push({
-                                x: time2 + i * 1000,
-                                y: Math.random()
-                            });
-                        }
-                        return data2;
-                    })()
-                }]
-            });//绘制三表功率曲线图结束
+                  // set up the updating of the chart each second
+                  var series1 = this.series[0];
+                  var series2= this.series[1];
+                  var series3= this.series[2];
+                  var series4 = this.series[3];
+                  var series5= this.series[4];
+                  var series6= this.series[5];
+                  setInterval(function() {
+                    fetch("/api/backweb/readSixMeterValue.do")
+                            .then(response => response.json())
+                            .then(data => {
+                              if (data.resultCode === 200){
+                                var x=new Date().getTime();
+                                read_data=data;
+                                flag=1;
+                                var y1=data.data[0].powerValue,
+                                        y2=data.data[1].powerValue,
+                                        y3=data.data[2].powerValue,
+                                        y4=data.data[3].powerValue,
+                                        y5=data.data[4].powerValue,
+                                        y6=data.data[5].powerValue;
+                                series1.addPoint([x, y1], true, true);
+                                series2.addPoint([x, y2], true, true);
+                                series3.addPoint([x, y3], true, true);
+                                series4.addPoint([x, y4], true, true);
+                                series5.addPoint([x, y5], true, true);
+                                series6.addPoint([x, y6], true, true);
+                              } else{
+                                flag=0;
+                              }
+                            })
+                            .catch(error => {
+                              console.log(error);
+                            }); // current time
 
 
-            //绘制功率差值曲线图
-            chart2 = new Highcharts.Chart({
-              chart: {
-                  renderTo: 'detapowergraph_search',//装载容器id
-                  type: 'spline',
-                  animation: Highcharts.svg, // don't animate in old IE
-                  marginRight: 10,
-                  events: {
-                      load: function() {
-
-                          // set up the updating of the chart each second
-                          // var series = this.series[0];
-                          // setInterval(function() {
-                          //     var x = (new Date()).getTime(), // current time
-                          //         y = Math.random();
-                          //     series.addPoint([x, y], true, true);
-                          // }, 1000);
-
-                      }
-                  }
-              },
+                  }, 1500);
+                }
+              }
+            },
+            title: {
+              text: '实时功率曲线'
+            },
+            xAxis: {
+              type: 'datetime',
+              tickPixelInterval: 150
+            },
+            yAxis: {
               title: {
-                  text: '线路损耗功率曲线'
+                text: '有功功率（W）'
               },
-              xAxis: {
-                  type: 'datetime',
-                  tickPixelInterval: 150
-              },
-              yAxis: {
-                  title: {
-                      text: '线路损耗有功功率（W）'
-                  },
-                  plotLines: [{
-                      value: 0,
-                      width: 1,
-                      color: '#808080'
-                  }]
-              },
-              tooltip: {
-                  formatter: function() {
-                          return '<b>'+ this.series.name +'</b><br/>'+
-                          Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) +'<br/>'+
-                          Highcharts.numberFormat(this.y, 2);
-                  }
-              },
-              legend: {
-                  enabled: true
-              },
-              exporting: {
-                  enabled: true
-              },
-              series: [{
-                  name: '线路功率差值',
-                  data: (function() {
-                      // generate an array of random data
-                      var data = [],
-                          time = (new Date()).getTime(),
+              plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+              }]
+            },
+            tooltip: {
+              formatter: function() {
+                return '<b>'+ this.series.name +'</b><br/>'+
+                        Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) +'<br/>'+
+                        Highcharts.numberFormat(this.y, 2);
+              }
+            },
+            legend: {
+              enabled: true
+            },
+            exporting: {
+              enabled: true
+            },
+            series: [{
+              name: '支路1计量',
+              data: (function() {
+                // generate an array of random data
+                var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+
+                for (i = -9; i <= 0; i++) {
+                  data.push({
+                    x: time + i * 3000,
+                    y: 0
+                  });
+                }
+                return data;
+              })()
+            },
+              {
+                name: '支路2计量',
+                data: (function() {
+                  // generate an array of random data
+                  var data1 = [],
+                          time1 = (new Date()).getTime(),
                           i;
 
-                      for (i = -19; i <= 0; i++) {
-                          data.push({
-                              x: time + i * 1000,
-                              y: Math.random()
-                          });
-                      }
-                      return data;
-                  })()
+                  for (i = -9; i <= 0; i++) {
+                    data1.push({
+                      x: time1 + i * 3000,
+                      y: 0
+                    });
+                  }
+                  return data1;
+                })()
+              },
+              {
+                name: '支路3计量',
+                data: (function() {
+                  // generate an array of random data
+                  var data2 = [],
+                          time2 = (new Date()).getTime(),
+                          i;
+
+                  for (i = -9; i <= 0; i++) {
+                    data2.push({
+                      x: time2 + i * 3000,
+                      y: 0
+                    });
+                  }
+                  return data2;
+                })()
+              },
+              {
+                name: '支路4计量',
+                data: (function() {
+                  // generate an array of random data
+                  var data2 = [],
+                          time2 = (new Date()).getTime(),
+                          i;
+
+                  for (i = -9; i <= 0; i++) {
+                    data2.push({
+                      x: time2 + i * 3000,
+                      y: 0
+                    });
+                  }
+                  return data2;
+                })()
+              },
+              {
+                name: '支路5计量',
+                data: (function() {
+                  // generate an array of random data
+                  var data2 = [],
+                          time2 = (new Date()).getTime(),
+                          i;
+
+                  for (i = -9; i <= 0; i++) {
+                    data2.push({
+                      x: time2 + i * 3000,
+                      y: 0
+                    });
+                  }
+                  return data2;
+                })()
+              },
+              {
+                name: '支路6计量',
+                data: (function() {
+                  // generate an array of random data
+                  var data2 = [],
+                          time2 = (new Date()).getTime(),
+                          i;
+
+                  for (i = -9; i <= 0; i++) {
+                    data2.push({
+                      x: time2 + i * 3000,
+                      y: 0
+                    });
+                  }
+                  return data2;
+                })()
               }]
-            });//绘制功率差值曲线图结束
+          });//绘制三表功率曲线图结束
+          //绘制功率差值曲线图
+          chart2 = new Highcharts.Chart({
+            chart: {
+              renderTo: 'detapowergraph_search',//装载容器id
+              type: 'spline',
+              animation: Highcharts.svg, // don't animate in old IE
+              marginRight: 10,
+              events: {
+                load: function() {
+
+                  // set up the updating of the chart each second
+                  var series1 = this.series[0];
+                  var series2 = this.series[1];
+                  var series3 = this.series[2];
+                  var series4 = this.series[3];
+                  var series5 = this.series[4];
+                  var series6 = this.series[5];
+
+                  setInterval(function() {
+                    var x = (new Date()).getTime(), // current time
+                            y1 = read_data.data[0].voltageValue,
+                            y2 = read_data.data[1].voltageValue,
+                            y3 = read_data.data[2].voltageValue,
+                            y4 = read_data.data[3].voltageValue,
+                            y5 = read_data.data[4].voltageValue,
+                            y6 = read_data.data[5].voltageValue;
+                    if(flag==1)
+                    {
+                      series1.addPoint([x, y1], true, true);
+                      series2.addPoint([x, y2], true, true);
+                      series3.addPoint([x, y3], true, true);
+                      series4.addPoint([x, y4], true, true);
+                      series5.addPoint([x, y5], true, true);
+                      series6.addPoint([x, y6], true, true);
+                    }
+
+                  }, 1500);
+
+                }
+              }
+            },
+            title: {
+              text: '线路电压值'
+            },
+            xAxis: {
+              type: 'datetime',
+              tickPixelInterval: 150
+            },
+            yAxis: {
+              title: {
+                text: '电压（V）'
+              },
+              plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+              }]
+            },
+            tooltip: {
+              formatter: function() {
+                return '<b>'+ this.series.name +'</b><br/>'+
+                        Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) +'<br/>'+
+                        Highcharts.numberFormat(this.y, 2);
+              }
+            },
+            legend: {
+              enabled: true
+            },
+            exporting: {
+              enabled: true
+            },
+            series: [{
+              name: '支路1计量',
+              data: (function() {
+                // generate an array of random data
+                var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+
+                for (i = -9; i <= 0; i++) {
+                  data.push({
+                    x: time + i * 3000,
+                    y: 220
+                  });
+                }
+                return data;
+              })()
+            },{
+              name: '支路2计量',
+              data: (function() {
+                // generate an array of random data
+                var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+
+                for (i = -9; i <= 0; i++) {
+                  data.push({
+                    x: time + i * 3000,
+                    y: 220
+                  });
+                }
+                return data;
+              })()
+            },{
+              name: '支路3计量',
+              data: (function() {
+                // generate an array of random data
+                var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+
+                for (i = -9; i <= 0; i++) {
+                  data.push({
+                    x: time + i * 3000,
+                    y: 220
+                  });
+                }
+                return data;
+              })()
+            },{
+              name: '支路4计量',
+              data: (function() {
+                // generate an array of random data
+                var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+
+                for (i = -9; i <= 0; i++) {
+                  data.push({
+                    x: time + i * 3000,
+                    y: 220
+                  });
+                }
+                return data;
+              })()
+            },{
+              name: '支路5计量',
+              data: (function() {
+                // generate an array of random data
+                var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+
+                for (i = -9; i <= 0; i++) {
+                  data.push({
+                    x: time + i * 3000,
+                    y: 220
+                  });
+                }
+                return data;
+              })()
+            },{
+              name: '支路6计量',
+              data: (function() {
+                // generate an array of random data
+                var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+
+                for (i = -9; i <= 0; i++) {
+                  data.push({
+                    x: time + i * 3000,
+                    y: 220
+                  });
+                }
+                return data;
+              })()
+            }]
+          });//绘制功率差值曲线图结束
 
         
 

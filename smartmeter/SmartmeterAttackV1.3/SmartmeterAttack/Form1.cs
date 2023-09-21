@@ -30,13 +30,13 @@ namespace SmartmeterAttack
         bool bIsOpen = false;
         private System.Windows.Forms.Timer timer;
         private Random random = new Random();
-        private byte[] res = new byte[20];
+        private byte[] res = new byte[512];
         private int pt1 = 220, pt2 = 220, ct = 25;
         public Form1()
         {
             InitializeComponent();
             timer = new System.Windows.Forms.Timer();
-            timer.Interval = 1000; // 设置定时器间隔为0.5秒
+            timer.Interval = 3000; // 设置定时器间隔为0.5秒
             timer.Tick += Timer_Tick;
             timer.Start();
             x = Width;
@@ -64,7 +64,6 @@ namespace SmartmeterAttack
                 if (con.Controls.Count > 0) setTag(con);
             }
         }
-
         private void setControls(float newx, float newy, Control cons)
         {
             //遍历窗体中的控件，重新设置控件的值
@@ -113,114 +112,122 @@ namespace SmartmeterAttack
         {
             float vv, cc, pp;
             byte*[] add = new byte*[5];
-            TcpMeter1.ReadHoldingRegisters(0x01, 0x0131, 0x0001, res);
-            vv = ((res[0] << 8) + res[1]) * pt1 / pt2 / (float)10.0;
+            TcpMeter1.ReadHoldingRegisters(0x01, 0x0131, 0x0016, res);
+            vv = ((res[9-9] << 8) + res[10 - 9]) * pt1 / pt2 / (float)10.0;
             v_1.Text = vv.ToString("0.00");
-            TcpMeter1.ReadHoldingRegisters(0x01, 0x0139, 0x0001, res);
-            cc = ((res[0] << 8) + res[1]) * ct / 5 / 1000;
+            cc = ((res[25 - 9] << 8) + res[26 - 9]) * ct / 5 / 1000;
             c_1.Text = cc.ToString("0.00");
-            TcpMeter1.ReadHoldingRegisters(0x01, 0x0146, 0x0001, res);
-            pp = ((res[0] << 8) + res[1]) * ct / 5; 
+            pp = ((res[51 - 9] << 8) + res[52 - 9]) * ct / 5;
             p_1.Text = pp.ToString("0.00");
             ///////////////////////////////////////////////////////////////
-            TcpMeter1.ReadHoldingRegisters(0x02, 0x0131, 0x0001, res);
-            vv = ((res[0] << 8) + res[1]) * pt1 / pt2 / (float)10.0;
+            TcpMeter1.ReadHoldingRegisters(0x02, 0x0131, 0x0016, res);
+            vv = ((res[9 - 9] << 8) + res[10 - 9]) * pt1 / pt2 / (float)10.0;
             v_2.Text = vv.ToString("0.00");
-            TcpMeter1.ReadHoldingRegisters(0x02, 0x0139, 0x0001, res);
-            cc = (float)((float)((res[0] << 8) + res[1])* (float)ct /5.0/1000.0);
+            cc = ((res[25 - 9] << 8) + res[26 - 9]) * ct / 5 / 1000;
             c_2.Text = cc.ToString("0.00");
-            TcpMeter1.ReadHoldingRegisters(0x02, 0x0146, 0x0001, res);
-            pp = (float)((float)((res[0] << 8) + res[1]) * (float)ct / 5.0);
+            pp = ((res[51 - 9] << 8) + res[52 - 9]) * ct / 5;
             p_2.Text = pp.ToString("0.00");
             /////////////////////////////////////////////////////////////
-            TcpMeter1.ReadHoldingRegisters(0x03, 1123, 0x0001, res);
-            short vv3;
-            add[0] = (byte*)(&vv3) + 1;
-            add[1] = (byte*)(&vv3) + 0;
-            *add[0] = res[0];
-            *add[1] = res[1];
-            v_3.Text = vv3.ToString("0.00");
-            TcpMeter1.ReadHoldingRegisters(0x03, 1159, 0x0001, res);
-            int ccc= (res[0] << 8) + res[1];
-            if (ccc == 32768) pp = 0;
-            else pp = ccc / 10.0f;
-            
-            p_3.Text = pp.ToString("0.00");
-            c_3.Text = (pp / vv3).ToString("0.00");
+            TcpMeter1.ReadHoldingRegisters(0x03, 0x2db3, 0x0038, res);
+            add[0] = (byte*)(&vv) + 3;
+            add[1] = (byte*)(&vv) + 2;
+            add[2] = (byte*)(&vv) + 1;
+            add[3] = (byte*)(&vv) + 0;
+            *add[0] = res[49 - 9];
+            *add[1] = res[50 - 9];
+            *add[2] = res[51 - 9];
+            *add[3] = res[52 - 9];
+            v_3.Text = vv.ToString("0.00");
+            add[0] = (byte*)(&cc) + 3;
+            add[1] = (byte*)(&cc) + 2;
+            add[2] = (byte*)(&cc) + 1;
+            add[3] = (byte*)(&cc) + 0;
+            *add[0] = res[9 - 9];
+            *add[1] = res[10 - 9];
+            *add[2] = res[11 - 9];
+            *add[3] = res[12 - 9];
+            c_3.Text = cc.ToString("0.00");
+
+            p_3.Text = (vv*cc).ToString("0.00");
             /////////////////////////////////////////////////////////////
-            TcpMeter1.ReadHoldingRegisters(0x04, 1123, 0x0001, res);
-            add[0] = (byte*)(&vv3) + 1;
-            add[1] = (byte*)(&vv3) + 0;
-            *add[0] = res[0];
-            *add[1] = res[1];
-            v_4.Text = vv3.ToString("0.00");
-            TcpMeter1.ReadHoldingRegisters(0x04, 1159, 0x0001, res);
-            ccc = (res[0] << 8) + res[1];
-            if (ccc == 32768) pp = 0;
-            else pp = ccc / 10.0f;
-            p_4.Text = pp.ToString("0.00");
-            c_4.Text = (pp/vv3).ToString("0.00");
+            TcpMeter1.ReadHoldingRegisters(0x04, 0x2db3, 0x0038, res);
+            add[0] = (byte*)(&vv) + 3;
+            add[1] = (byte*)(&vv) + 2;
+            add[2] = (byte*)(&vv) + 1;
+            add[3] = (byte*)(&vv) + 0;
+            *add[0] = res[49 - 9];
+            *add[1] = res[50 - 9];
+            *add[2] = res[51 - 9];
+            *add[3] = res[52 - 9];
+            v_4.Text = vv.ToString("0.00");
+            add[0] = (byte*)(&cc) + 3;
+            add[1] = (byte*)(&cc) + 2;
+            add[2] = (byte*)(&cc) + 1;
+            add[3] = (byte*)(&cc) + 0;
+            *add[0] = res[9 - 9];
+            *add[1] = res[10 - 9];
+            *add[2] = res[11 - 9];
+            *add[3] = res[12 - 9];
+            c_4.Text = cc.ToString("0.00");
+
+            p_4.Text = (vv * cc).ToString("0.00");
             /////////////////////////////////////////////////////////////
-            TcpMeter1.ReadHoldingRegisters(0x05, 0x0001, 0x0002, res);
+            TcpMeter1.ReadHoldingRegisters(0x05, 0x0001, 0x0040, res);
             add[0] = (byte*)(&vv) + 3;
             add[1] = (byte*)(&vv) + 2;
             add[2] = (byte*)(&vv) + 1;
             add[3] = (byte*)(&vv);
-            *add[0] = res[0];
-            *add[1] = res[1];
-            *add[2] = res[2];
-            *add[3] = res[3];
+            *add[0] = res[9 - 9];
+            *add[1] = res[10 - 9];
+            *add[2] = res[11 - 9];
+            *add[3] = res[12 - 9];
             v_5.Text = vv.ToString("0.00");
-            TcpMeter1.ReadHoldingRegisters(0x05, 13, 0x0002, res);
             add[0] = (byte*)(&cc) + 3;
             add[1] = (byte*)(&cc) + 2;
             add[2] = (byte*)(&cc) + 1;
             add[3] = (byte*)(&cc);
-            *add[0] = res[0];
-            *add[1] = res[1];
-            *add[2] = res[2];
-            *add[3] = res[3];
+            *add[0] = res[33 - 9];
+            *add[1] = res[34 - 9];
+            *add[2] = res[35 - 9];
+            *add[3] = res[36 - 9];
             c_5.Text = cc.ToString("0.00");
-            TcpMeter1.ReadHoldingRegisters(0x05, 63, 0x0002, res);
             add[0] = (byte*)(&pp) + 3;
             add[1] = (byte*)(&pp) + 2;
             add[2] = (byte*)(&pp) + 1;
             add[3] = (byte*)(&pp);
-            *add[0] = res[0];
-            *add[1] = res[1];
-            *add[2] = res[2];
-            *add[3] = res[3];
+            *add[0] = res[133 - 9];
+            *add[1] = res[134 - 9];
+            *add[2] = res[135 - 9];
+            *add[3] = res[136 - 9];
             p_5.Text = pp.ToString("0.00");
             //////////////////////////////////////////////////////////////////////////////
-            TcpMeter1.ReadHoldingRegisters(0x06, 0x0001, 0x0002, res);
+            TcpMeter1.ReadHoldingRegisters(0x06, 0x0001, 0x0040, res);
             add[0] = (byte*)(&vv) + 3;
             add[1] = (byte*)(&vv) + 2;
             add[2] = (byte*)(&vv) + 1;
             add[3] = (byte*)(&vv);
-            *add[0] = res[0];
-            *add[1] = res[1];
-            *add[2] = res[2];
-            *add[3] = res[3];
+            *add[0] = res[9 - 9];
+            *add[1] = res[10 - 9];
+            *add[2] = res[11 - 9];
+            *add[3] = res[12 - 9];
             v_6.Text = vv.ToString("0.00");
-            TcpMeter1.ReadHoldingRegisters(0x06, 13, 0x0002, res);
             add[0] = (byte*)(&cc) + 3;
             add[1] = (byte*)(&cc) + 2;
             add[2] = (byte*)(&cc) + 1;
             add[3] = (byte*)(&cc);
-            *add[0] = res[0];
-            *add[1] = res[1];
-            *add[2] = res[2];
-            *add[3] = res[3];
+            *add[0] = res[33 - 9];
+            *add[1] = res[34 - 9];
+            *add[2] = res[35 - 9];
+            *add[3] = res[36 - 9];
             c_6.Text = cc.ToString("0.00");
-            TcpMeter1.ReadHoldingRegisters(0x06, 63, 0x0002, res);
             add[0] = (byte*)(&pp) + 3;
             add[1] = (byte*)(&pp) + 2;
             add[2] = (byte*)(&pp) + 1;
             add[3] = (byte*)(&pp);
-            *add[0] = res[0];
-            *add[1] = res[1];
-            *add[2] = res[2];
-            *add[3] = res[3];
+            *add[0] = res[133 - 9];
+            *add[1] = res[134 - 9];
+            *add[2] = res[135 - 9];
+            *add[3] = res[136 - 9];
             p_6.Text = pp.ToString("0.00");
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -410,6 +417,9 @@ namespace SmartmeterAttack
                     button2.Enabled = true;
                     button3.Enabled = true;
                     button4.Enabled = true;
+                    richTextBox1.AppendText("---连接已建立---       "+ DateTime.Now.ToString() + Environment.NewLine);
+                    richTextBox1.ScrollToCaret();
+
                 }
                 catch (Exception ex)
                 {
@@ -431,6 +441,8 @@ namespace SmartmeterAttack
                     button2.Enabled = false;
                     button3.Enabled = false;
                     button4.Enabled = false;
+                    richTextBox1.AppendText("---连接已断开---       " + DateTime.Now.ToString() + Environment.NewLine);
+                    richTextBox1.ScrollToCaret();
 
                 }
                 catch (Exception ex)
@@ -698,6 +710,7 @@ namespace SmartmeterAttack
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             textBox13.Text = trackBar1.Value.ToString();
+
         }
 
         private void button_61_Click(object sender, EventArgs e)
@@ -706,6 +719,8 @@ namespace SmartmeterAttack
             cgc(6, 0);
             cgb1(6, 0);
             cgb2(6, 1);
+            richTextBox1.AppendText("---攻击指令已发送 6#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_62_Click(object sender, EventArgs e)
@@ -719,6 +734,8 @@ namespace SmartmeterAttack
             cgc(6, 1);
             cgb1(6, 1);
             cgb2(6, 0);
+            richTextBox1.AppendText("---还原指令已发送 6#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_51_Click(object sender, EventArgs e)
@@ -727,6 +744,8 @@ namespace SmartmeterAttack
             cgc(5, 0);
             cgb1(5, 0);
             cgb2(5, 1);
+            richTextBox1.AppendText("---攻击指令已发送 5#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_52_Click(object sender, EventArgs e)
@@ -735,6 +754,8 @@ namespace SmartmeterAttack
             cgc(5, 1);
             cgb1(5, 1);
             cgb2(5, 0);
+            richTextBox1.AppendText("---还原指令已发送 5#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_41_Click(object sender, EventArgs e)
@@ -743,6 +764,8 @@ namespace SmartmeterAttack
             cgc(4, 0);
             cgb1(4, 0);
             cgb2(4, 1);
+            richTextBox1.AppendText("---攻击指令已发送 4#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_42_Click(object sender, EventArgs e)
@@ -751,6 +774,8 @@ namespace SmartmeterAttack
             cgc(4, 1);
             cgb1(4, 1);
             cgb2(4, 0);
+            richTextBox1.AppendText("---还原指令已发送 4#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_31_Click(object sender, EventArgs e)
@@ -759,6 +784,8 @@ namespace SmartmeterAttack
             cgc(3, 0);
             cgb1(3, 0);
             cgb2(3, 1);
+            richTextBox1.AppendText("---攻击指令已发送 3#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_21_Click(object sender, EventArgs e)
@@ -767,6 +794,8 @@ namespace SmartmeterAttack
             cgc(2, 0);
             cgb1(2, 0);
             cgb2(2, 1);
+            richTextBox1.AppendText("---攻击指令已发送 2#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_32_Click(object sender, EventArgs e)
@@ -775,6 +804,8 @@ namespace SmartmeterAttack
             cgc(3, 1);
             cgb1(3, 1);
             cgb2(3, 0);
+            richTextBox1.AppendText("---还原指令已发送 3#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_22_Click(object sender, EventArgs e)
@@ -783,6 +814,8 @@ namespace SmartmeterAttack
             cgc(2, 1);
             cgb1(2, 1);
             cgb2(2, 0);
+            richTextBox1.AppendText("---攻击指令已发送 2#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_11_Click(object sender, EventArgs e)
@@ -791,6 +824,8 @@ namespace SmartmeterAttack
             cgc(1, 0);
             cgb1(1, 0);
             cgb2(1, 1);
+            richTextBox1.AppendText("---攻击指令已发送 1#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void button_12_Click(object sender, EventArgs e)
@@ -799,6 +834,8 @@ namespace SmartmeterAttack
             cgc(1, 1);
             cgb1(1, 1);
             cgb2(1, 0);
+            richTextBox1.AppendText("---还原指令已发送 1#---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -859,6 +896,8 @@ namespace SmartmeterAttack
                     bholdregs1_5 = BitConverter.GetBytes(PT1_1new);
                     Array.Reverse(bholdregs1_5, 0, 4);
                     TcpMeter1.WriteMultipleRegistersQ((byte)item, 261, bholdregs1_5);
+                    richTextBox1.AppendText("---篡改指令已发送---       " + DateTime.Now.ToString() + Environment.NewLine);
+                    richTextBox1.ScrollToCaret();
                 }
             }
             else if (comboBox1.SelectedIndex == 1)
@@ -875,6 +914,8 @@ namespace SmartmeterAttack
                     bholdregs1_7 = BitConverter.GetBytes(PT1_2new);
                     Array.Reverse(bholdregs1_7, 0, 2);
                     TcpMeter1.WriteMultipleRegistersP((byte)item, 263, bholdregs1_7);
+                    richTextBox1.AppendText("---篡改指令已发送---       " + DateTime.Now.ToString() + Environment.NewLine);
+                    richTextBox1.ScrollToCaret();
                 }
             }
             else if (comboBox1.SelectedIndex == 2)
@@ -892,6 +933,8 @@ namespace SmartmeterAttack
                     Array.Reverse(bholdregs1_6, 0, 2);
 
                     TcpMeter1.WriteMultipleRegistersP((byte)item, 264, bholdregs1_6);
+                    richTextBox1.AppendText("---篡改指令已发送---       " + DateTime.Now.ToString() + Environment.NewLine);
+                    richTextBox1.ScrollToCaret();
                 }
             }
         }
@@ -899,6 +942,28 @@ namespace SmartmeterAttack
         private void button5_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void v_1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            richTextBox1.AppendText("---配置文件已注入---       " + DateTime.Now.ToString() + Environment.NewLine);
+            richTextBox1.ScrollToCaret();
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            if(label1.Text == "✘")label1.Text = "✔";
+            else if (label1.Text == "✔") label1.Text = "✘";
         }
 
         private void textBox11_TextChanged(object sender, EventArgs e)

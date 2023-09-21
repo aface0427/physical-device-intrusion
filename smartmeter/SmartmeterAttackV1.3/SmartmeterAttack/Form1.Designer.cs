@@ -720,6 +720,7 @@
             this.v_1.TabIndex = 14;
             this.v_1.Text = "\r\n";
             this.v_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.v_1.TextChanged += new System.EventHandler(this.v_1_TextChanged_1);
             // 
             // v_2
             // 
@@ -1092,13 +1093,14 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 156);
+            this.button4.Location = new System.Drawing.Point(12, 158);
             this.button4.Margin = new System.Windows.Forms.Padding(6);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(240, 60);
             this.button4.TabIndex = 2;
             this.button4.Text = "攻击";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // label1
             // 
@@ -1110,6 +1112,7 @@
             this.label1.Size = new System.Drawing.Size(41, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "✘";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // button3
             // 
@@ -1120,6 +1123,7 @@
             this.button3.TabIndex = 0;
             this.button3.Text = "选择配置文件注入";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // label2
             // 
@@ -1146,7 +1150,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
-            this.Text = "电表攻击演示";
+            this.Text = "风险评估系统";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.groupBox1.ResumeLayout(false);
@@ -1156,7 +1160,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.操作状态.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
