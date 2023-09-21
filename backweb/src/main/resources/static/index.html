@@ -18,7 +18,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.1.8.2.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 
@@ -125,7 +125,7 @@
 				  <ul class="list-group">
 					  <li class="list-group-item">Addr:0x06</li>
 					  <li class="list-group-item list-group-item-success">支路状态：<span
-							  class="glyphicon glyphicon-warning-sign"></span></li>
+							  class="glyphicon glyphicon-warning-sign" id="sta_6"></span></li>
 				  </ul>
 			  </div>
 			</div>
@@ -152,7 +152,7 @@
 						<ul class="list-group">
 							<li class="list-group-item">Addr:0x05</li>
 							<li class="list-group-item list-group-item-success">支路状态：<span
-									class="glyphicon glyphicon-remove"></span></li>
+									class="glyphicon glyphicon-remove" id="sta_5"></span></li>
 						</ul>
 					</div>
 				</div>
@@ -180,7 +180,7 @@
 				  <ul class="list-group">
 					  <li class="list-group-item">Addr:0x04</li>
 					  <li class="list-group-item  list-group-item-success">支路状态：<span
-							  class="glyphicon glyphicon-ok"></span></li>
+							  class="glyphicon glyphicon-ok" id="sta_4"></span></li>
 				  </ul>
 			  </div>
 			</div>
@@ -206,7 +206,7 @@
 						<ul class="list-group">
 							<li class="list-group-item">Addr:0x03</li>
 							<li class="list-group-item  list-group-item-success">支路状态：<span
-									class="glyphicon glyphicon-ok"></span></li>
+									class="glyphicon glyphicon-ok" id="sta_3"></span></li>
 						</ul>
 					</div>
 				</div>
@@ -232,7 +232,7 @@
 						<ul class="list-group">
 							<li class="list-group-item">Addr:0x02</li>
 							<li class="list-group-item  list-group-item-success">支路状态：<span
-									class="glyphicon glyphicon-ok"></span></li>
+									class="glyphicon glyphicon-ok" id="sta_2"></span></li>
 						</ul>
 					</div>
 				</div>
@@ -258,7 +258,7 @@
 						<ul class="list-group">
 							<li class="list-group-item">Addr:0x01</li>
 							<li class="list-group-item  list-group-item-success">支路状态：<span
-									class="glyphicon glyphicon-ok"></span></li>
+									class="glyphicon glyphicon-ok" id="sta_1"></span></li>
 						</ul>
 					</div>
 				</div>
@@ -310,6 +310,30 @@
 								button.classList.remove("btn-success");
 								button.classList.add("btn-light");
 								button.textContent = "电表未连接";
+								let c1=document.getElementById("sw_6");
+								let c2=document.getElementById("sta_6");
+								c1.className="sw_off";
+								c2.className="glyphicon glyphicon-remove";
+								c1=document.getElementById("sw_5");
+								c2=document.getElementById("sta_5");
+								c1.className="sw_off";
+								c2.className="glyphicon glyphicon-remove";
+								c1=document.getElementById("sw_4");
+								c2=document.getElementById("sta_4");
+								c1.className="sw_off";
+								c2.className="glyphicon glyphicon-remove";
+								c1=document.getElementById("sw_3");
+								c2=document.getElementById("sta_3");
+								c1.className="sw_off";
+								c2.className="glyphicon glyphicon-remove";
+								c1=document.getElementById("sw_2");
+								c2=document.getElementById("sta_2");
+								c1.className="sw_off";
+								c2.className="glyphicon glyphicon-remove";
+								c1=document.getElementById("sw_1");
+								c2=document.getElementById("sta_1");
+								c1.className="sw_off";
+								c2.className="glyphicon glyphicon-remove";
 							} else{
 								window.alert("连接失败");
 							}
@@ -360,6 +384,23 @@
 								element.textContent = 'I='+data.data.currentValue+'A';
 								element = document.querySelector('.list-group-item.p1');
 								element.textContent = 'P='+data.data.powerValue+'W';
+								const c1=document.getElementById("sw_1");
+								const c2=document.getElementById("sta_1");
+								if(data.data.voltageValue<10)
+								{
+									c1.className="sw_off";
+									c2.className="glyphicon glyphicon-remove"
+								}
+								else if(data.data.voltageValue>=220&&data.data.voltageValue<=240)
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-ok"
+								}
+								else
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-warning-sign"
+								}
 							}
 							else if(data.data.id==2)
 							{
@@ -369,6 +410,23 @@
 								element.textContent = 'I='+data.data.currentValue+'A';
 								element = document.querySelector('.list-group-item.p2');
 								element.textContent = 'P='+data.data.powerValue+'W';
+								const c1=document.getElementById("sw_2");
+								const c2=document.getElementById("sta_2");
+								if(data.data.voltageValue<10)
+								{
+									c1.className="sw_off";
+									c2.className="glyphicon glyphicon-remove"
+								}
+								else if(data.data.voltageValue>=220&&data.data.voltageValue<=240)
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-ok"
+								}
+								else
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-warning-sign"
+								}
 							}
 							else if(data.data.id==3)
 							{
@@ -378,6 +436,23 @@
 								element.textContent = 'I='+data.data.currentValue+'A';
 								element = document.querySelector('.list-group-item.p3');
 								element.textContent = 'P='+data.data.powerValue+'W';
+								const c1=document.getElementById("sw_3");
+								const c2=document.getElementById("sta_3");
+								if(data.data.voltageValue<10)
+								{
+									c1.className="sw_off";
+									c2.className="glyphicon glyphicon-remove"
+								}
+								else if(data.data.voltageValue>=220&&data.data.voltageValue<=240)
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-ok"
+								}
+								else
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-warning-sign"
+								}
 							}
 							else if(data.data.id==4)
 							{
@@ -387,6 +462,23 @@
 								element.textContent = 'I='+data.data.currentValue+'A';
 								element = document.querySelector('.list-group-item.p4');
 								element.textContent = 'P='+data.data.powerValue+'W';
+								const c1=document.getElementById("sw_4");
+								const c2=document.getElementById("sta_4");
+								if(data.data.voltageValue<10)
+								{
+									c1.className="sw_off";
+									c2.className="glyphicon glyphicon-remove"
+								}
+								else if(data.data.voltageValue>=220&&data.data.voltageValue<=240)
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-ok"
+								}
+								else
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-warning-sign"
+								}
 							}
 							else if(data.data.id==5)
 							{
@@ -396,6 +488,23 @@
 								element.textContent = 'I='+data.data.currentValue+'A';
 								element = document.querySelector('.list-group-item.p5');
 								element.textContent = 'P='+data.data.powerValue+'W';
+								const c1=document.getElementById("sw_5");
+								const c2=document.getElementById("sta_5");
+								if(data.data.voltageValue<10)
+								{
+									c1.className="sw_off";
+									c2.className="glyphicon glyphicon-remove"
+								}
+								else if(data.data.voltageValue>=220&&data.data.voltageValue<=240)
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-ok"
+								}
+								else
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-warning-sign"
+								}
 							}
 							else if(data.data.id==6)
 							{
@@ -405,6 +514,23 @@
 								element.textContent = 'I='+data.data.currentValue+'A';
 								element = document.querySelector('.list-group-item.p6');
 								element.textContent = 'P='+data.data.powerValue+'W';
+								const c1=document.getElementById("sw_6");
+								const c2=document.getElementById("sta_6");
+								if(data.data.voltageValue<10)
+								{
+									c1.className="sw_off";
+									c2.className="glyphicon glyphicon-remove"
+								}
+								else if(data.data.voltageValue>=220&&data.data.voltageValue<=240)
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-ok"
+								}
+								else
+								{
+									c1.className="sw_on";
+									c2.className="glyphicon glyphicon-warning-sign"
+								}
 							}
 						})
 						.catch(error => {
@@ -430,7 +556,30 @@
 					    button.textContent = "电表已连接";
 					    makeRequests();
 				    } else{
-					   
+						let c1=document.getElementById("sw_6");
+						let c2=document.getElementById("sta_6");
+						c1.className="sw_off";
+						c2.className="glyphicon glyphicon-remove";
+						c1=document.getElementById("sw_5");
+						c2=document.getElementById("sta_5");
+						c1.className="sw_off";
+						c2.className="glyphicon glyphicon-remove";
+						c1=document.getElementById("sw_4");
+						c2=document.getElementById("sta_4");
+						c1.className="sw_off";
+						c2.className="glyphicon glyphicon-remove";
+						c1=document.getElementById("sw_3");
+						c2=document.getElementById("sta_3");
+						c1.className="sw_off";
+						c2.className="glyphicon glyphicon-remove";
+						c1=document.getElementById("sw_2");
+						c2=document.getElementById("sta_2");
+						c1.className="sw_off";
+						c2.className="glyphicon glyphicon-remove";
+						c1=document.getElementById("sw_1");
+						c2=document.getElementById("sta_1");
+						c1.className="sw_off";
+						c2.className="glyphicon glyphicon-remove";
 				    }
 			    })
 			    .catch(error => {

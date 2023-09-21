@@ -4,7 +4,8 @@ import com.xjtu.backweb.common.HttpResult;
 import com.xjtu.backweb.dao.MeterDataDao;
 import com.xjtu.backweb.entity.MeterData;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
@@ -29,6 +30,7 @@ public class ReadMeterValueController {
     private Boolean isConnected=false;
     private Integer now_point=1;
     private Integer maxi=7;
+
     @RequestMapping(value="connectBuild.do",method= RequestMethod.GET)
     @ResponseBody
     public HttpResult buildConnection(String ipAddr,Integer port) throws IOException {
@@ -81,6 +83,24 @@ public class ReadMeterValueController {
         }
         return HttpResult.FAILURE();
     }
+    @RequestMapping(value="readMeterValue.do",method= RequestMethod.GET)
+    @ResponseBody
+    public HttpResult<MeterData> readMeterData(Integer id){
+        if(!isConnected)return HttpResult.FAILURE();
+        else {
+            return HttpResult.SUCCESS(meterDataDao.findLastRecordById(id));
+        }
+    }
+    @RequestMapping(value="readSixMeterValue.do",method= RequestMethod.GET)
+    @ResponseBody
+    public HttpResult<MeterData[]> readSixMeterData(Integer id){
+        if(!isConnected)return HttpResult.FAILURE();
+        else {
+            return HttpResult.SUCCESS(meterDataDao.findLastSixRecordById());
+        }
+    }
+
+
 //    @RequestMapping(value="readMeterValue.do",method= RequestMethod.GET)
 //    @ResponseBody
 //    public HttpResult<MeterData> readMeterData(Integer id) throws IOException {
